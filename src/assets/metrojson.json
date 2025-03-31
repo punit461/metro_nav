@@ -1,0 +1,3055 @@
+{
+  "stations": [
+    {
+      "id": "whitefield_kadugodi",
+      "name": "Whitefield (Kadugodi)",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "channasandra_hopefarm",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "channasandra_hopefarm",
+      "name": "Channasandra (Hopefarm)",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "whitefield_kadugodi",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "kadugodi_tree_park",
+          "distance": 1.5,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "kadugodi_tree_park",
+      "name": "Kadugodi Tree Park",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "channasandra_hopefarm",
+          "distance": 1.5,
+          "line": "purple"
+        },
+        {
+          "to": "pattandur_agrahara",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "pattandur_agrahara",
+      "name": "Pattandur Agrahara (ITPB)",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "kadugodi_tree_park",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "sri_sathya_sai_hospital",
+          "distance": 1.5,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "sri_sathya_sai_hospital",
+      "name": "Sri Sathya Sai Hospital",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "pattandur_agrahara",
+          "distance": 1.5,
+          "line": "purple"
+        },
+        {
+          "to": "nallurhalli",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "nallurhalli",
+      "name": "Nallurhalli",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "sri_sathya_sai_hospital",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "kundalahalli",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "kundalahalli",
+      "name": "Kundalahalli",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "nallurhalli",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "seetharam_palya",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "seetharam_palya",
+      "name": "Seetharam Palya",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "kundalahalli",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "hoodi",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "hoodi",
+      "name": "Hoodi",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "seetharam_palya",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "garudacharpalya",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "garudacharpalya",
+      "name": "Garudacharpalya",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "hoodi",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "singayyanapalya",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "singayyanapalya",
+      "name": "Singayyanapalya",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "garudacharpalya",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "kr_pura",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "kr_pura",
+      "name": "Kr Pura",
+      "is_active": true,
+      "lines": [
+        "purple",
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "singayyanapalya",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "benniganahalli",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "kasturinagar",
+          "distance": 0.5,
+          "line": "blue"
+        },
+        {
+          "to": "mahadevapura",
+          "distance": 1.5,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "benniganahalli",
+      "name": "Benniganahalli",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "kr_pura",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "baiyappanahalli",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "baiyappanahalli",
+      "name": "Baiyappanahalli",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "benniganahalli",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "swami_vivekananda_road",
+          "distance": 1.5,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "swami_vivekananda_road",
+      "name": "Swami Vivekananda Road",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "baiyappanahalli",
+          "distance": 1.5,
+          "line": "purple"
+        },
+        {
+          "to": "indiranagar",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "indiranagar",
+      "name": "Indiranagar",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "swami_vivekananda_road",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "halasuru",
+          "distance": 1.5,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "halasuru",
+      "name": "Halasuru",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "indiranagar",
+          "distance": 1.5,
+          "line": "purple"
+        },
+        {
+          "to": "trinity",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "trinity",
+      "name": "Trinity",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "halasuru",
+          "distance": 1.5,
+          "line": "purple"
+        },
+        {
+          "to": "mg_road",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "mg_road",
+      "name": "MG Road",
+      "is_active": true,
+      "lines": [
+        "purple",
+        "pink"
+      ],
+      "connections": [
+        {
+          "to": "trinity",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "cubbon_park",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "shivajinagar",
+          "distance": 2.0,
+          "line": "pink"
+        },
+        {
+          "to": "rastriya_military_school",
+          "distance": 2.0,
+          "line": "pink"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "cubbon_park",
+      "name": "Cubbon Park",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "mg_road",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "vidhana_soudha",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "vidhana_soudha",
+      "name": "Vidhana Soudha",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "cubbon_park",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "central_college",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "central_college",
+      "name": "Central College",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "vidhana_soudha",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "kempegowda_stn_majestic",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "kempegowda_stn_majestic",
+      "name": "Kempegowda Stn (Majestic)",
+      "is_active": true,
+      "lines": [
+        "purple",
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "central_college",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "ksr_bangalore_railway_stn",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "chickpete",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "sampige_road",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "ksr_bangalore_railway_stn",
+      "name": "KSR Bangalore Railway Stn",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "kempegowda_stn_majestic",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "magadi_road",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "magadi_road",
+      "name": "Magadi Road",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "ksr_bangalore_railway_stn",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "hosahalli",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "hosahalli",
+      "name": "Hosahalli",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "magadi_road",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "vijayanagar",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "vijayanagar",
+      "name": "Vijayanagar",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "hosahalli",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "attiguppe",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "attiguppe",
+      "name": "Attiguppe",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "vijayanagar",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "deepanjali_nagar",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "deepanjali_nagar",
+      "name": "Deepanjali Nagar",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "attiguppe",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "mysuru_road",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "mysuru_road",
+      "name": "Mysuru Road",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "deepanjali_nagar",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "nayandahalli",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "nayandahalli",
+      "name": "Nayandahalli",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "mysuru_road",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "rajarajeshwari_nagar",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "rajarajeshwari_nagar",
+      "name": "Rajarajeshwari Nagar",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "nayandahalli",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "jnanabharathi",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "jnanabharathi",
+      "name": "Jnanabharathi",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "rajarajeshwari_nagar",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "pattanagere",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "pattanagere",
+      "name": "Pattanagere",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "jnanabharathi",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "kengeri_bus_terminal",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "kengeri_bus_terminal",
+      "name": "Kengeri Bus Terminal",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "pattanagere",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "kengeri",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "kengeri",
+      "name": "Kengeri",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "kengeri_bus_terminal",
+          "distance": 2.0,
+          "line": "purple"
+        },
+        {
+          "to": "challaghatta",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "challaghatta",
+      "name": "Challaghatta",
+      "is_active": true,
+      "lines": [
+        "purple"
+      ],
+      "connections": [
+        {
+          "to": "kengeri",
+          "distance": 2.0,
+          "line": "purple"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "silk_institute",
+      "name": "Silk Institute",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "thalaghattapura",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "thalaghattapura",
+      "name": "Thalaghattapura",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "silk_institute",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "vajarahalli",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "vajarahalli",
+      "name": "Vajarahalli",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "thalaghattapura",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "doddakallasandra",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "doddakallasandra",
+      "name": "Doddakallasandra",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "vajarahalli",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "konanakunte_cross",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "konanakunte_cross",
+      "name": "Konanakunte Cross",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "doddakallasandra",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "yelachenahalli",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "yelachenahalli",
+      "name": "Yelachenahalli",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "konanakunte_cross",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "jayaprakash_nagar",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "jayaprakash_nagar",
+      "name": "Jayaprakash Nagar",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "yelachenahalli",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "banashankari",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "banashankari",
+      "name": "Banashankari",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "jayaprakash_nagar",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "rashtreeya_vidyalaya_road",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "rashtreeya_vidyalaya_road",
+      "name": "Rashtreeya Vidyalaya Road",
+      "is_active": true,
+      "lines": [
+        "green",
+        "yellow"
+      ],
+      "connections": [
+        {
+          "to": "banashankari",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "jayanagar",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "ragigudda",
+          "distance": 1.5,
+          "line": "yellow"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "jayanagar",
+      "name": "Jayanagar",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "rashtreeya_vidyalaya_road",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "south_end_circle",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "south_end_circle",
+      "name": "South End Circle",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "jayanagar",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "lalbagh",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "lalbagh",
+      "name": "Lalbagh",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "south_end_circle",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "national_college",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "national_college",
+      "name": "National College",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "lalbagh",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "krishna_rajendra_market",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "krishna_rajendra_market",
+      "name": "Krishna Rajendra Market",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "national_college",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "chickpete",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "chickpete",
+      "name": "Chickpete",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "krishna_rajendra_market",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "kempegowda_stn_majestic",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "sampige_road",
+      "name": "Sampige Road",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "kempegowda_stn_majestic",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "srirampura",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "srirampura",
+      "name": "Srirampura",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "sampige_road",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "kuvempu_road",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "kuvempu_road",
+      "name": "Kuvempu Road",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "srirampura",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "rajajinagar",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "rajajinagar",
+      "name": "Rajajinagar",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "kuvempu_road",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "mahalakshmi",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "mahalakshmi",
+      "name": "Mahalakshmi",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "rajajinagar",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "sandal_soap_factory",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "sandal_soap_factory",
+      "name": "Sandal Soap Factory",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "mahalakshmi",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "yeshwantpur",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "yeshwantpur",
+      "name": "Yeswanthpur",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "sandal_soap_factory",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "goraguntepalya",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "goraguntepalya",
+      "name": "Goraguntepalya",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "yeshwantpur",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "peenya",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "peenya",
+      "name": "Peenya",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "goraguntepalya",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "peenya_industrial_area",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "peenya_industrial_area",
+      "name": "Peenya Industrial Area",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "peenya",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "jalahalli",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "jalahalli",
+      "name": "Jalahalli",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "peenya_industrial_area",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "dasarahalli",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "dasarahalli",
+      "name": "Dasarahalli",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "jalahalli",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "nagasandra",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "nagasandra",
+      "name": "Nagasandra",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "dasarahalli",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "manjunatha_nagar",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "manjunatha_nagar",
+      "name": "Manjunatha Nagar",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "nagasandra",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "chikkabidarakallu",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "chikkabidarakallu",
+      "name": "Chikkabidarakallu",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "manjunatha_nagar",
+          "distance": 2.0,
+          "line": "green"
+        },
+        {
+          "to": "madavara",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "madavara",
+      "name": "Madavara",
+      "is_active": true,
+      "lines": [
+        "green"
+      ],
+      "connections": [
+        {
+          "to": "chikkabidarakallu",
+          "distance": 2.0,
+          "line": "green"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "bommasandra",
+      "name": "Bommasandra",
+      "is_active": true,
+      "lines": [
+        "yellow"
+      ],
+      "connections": [
+        {
+          "to": "hebbagodi",
+          "distance": 2.0,
+          "line": "yellow"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "hebbagodi",
+      "name": "Hebbagodi",
+      "is_active": true,
+      "lines": [
+        "yellow"
+      ],
+      "connections": [
+        {
+          "to": "bommasandra",
+          "distance": 2.0,
+          "line": "yellow"
+        },
+        {
+          "to": "huskur_road",
+          "distance": 1.5,
+          "line": "yellow"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "huskur_road",
+      "name": "Huskur Road",
+      "is_active": true,
+      "lines": [
+        "yellow"
+      ],
+      "connections": [
+        {
+          "to": "hebbagodi",
+          "distance": 1.5,
+          "line": "yellow"
+        },
+        {
+          "to": "konnapana_agrahara",
+          "distance": 2.0,
+          "line": "yellow"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "konnapana_agrahara",
+      "name": "Konnapana Agrahara",
+      "is_active": true,
+      "lines": [
+        "yellow"
+      ],
+      "connections": [
+        {
+          "to": "huskur_road",
+          "distance": 2.0,
+          "line": "yellow"
+        },
+        {
+          "to": "electronic_city",
+          "distance": 2.0,
+          "line": "yellow"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "electronic_city",
+      "name": "Electronic City",
+      "is_active": true,
+      "lines": [
+        "yellow"
+      ],
+      "connections": [
+        {
+          "to": "konnapana_agrahara",
+          "distance": 2.0,
+          "line": "yellow"
+        },
+        {
+          "to": "beratena_agrahara",
+          "distance": 2.0,
+          "line": "yellow"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "beratena_agrahara",
+      "name": "Beratena Agrahara",
+      "is_active": true,
+      "lines": [
+        "yellow"
+      ],
+      "connections": [
+        {
+          "to": "electronic_city",
+          "distance": 2.0,
+          "line": "yellow"
+        },
+        {
+          "to": "hosa_road",
+          "distance": 2.0,
+          "line": "yellow"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "hosa_road",
+      "name": "Hosa Road",
+      "is_active": true,
+      "lines": [
+        "yellow"
+      ],
+      "connections": [
+        {
+          "to": "beratena_agrahara",
+          "distance": 2.0,
+          "line": "yellow"
+        },
+        {
+          "to": "singasandra",
+          "distance": 2.0,
+          "line": "yellow"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "singasandra",
+      "name": "Singasandra",
+      "is_active": true,
+      "lines": [
+        "yellow"
+      ],
+      "connections": [
+        {
+          "to": "hosa_road",
+          "distance": 2.0,
+          "line": "yellow"
+        },
+        {
+          "to": "kudlu_gate",
+          "distance": 2.0,
+          "line": "yellow"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "kudlu_gate",
+      "name": "Kudlu Gate",
+      "is_active": true,
+      "lines": [
+        "yellow"
+      ],
+      "connections": [
+        {
+          "to": "singasandra",
+          "distance": 2.0,
+          "line": "yellow"
+        },
+        {
+          "to": "hongasandra",
+          "distance": 2.0,
+          "line": "yellow"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "hongasandra",
+      "name": "Hongasandra",
+      "is_active": true,
+      "lines": [
+        "yellow"
+      ],
+      "connections": [
+        {
+          "to": "kudlu_gate",
+          "distance": 2.0,
+          "line": "yellow"
+        },
+        {
+          "to": "bommanahalli",
+          "distance": 2.0,
+          "line": "yellow"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "bommanahalli",
+      "name": "Bommanahalli",
+      "is_active": true,
+      "lines": [
+        "yellow"
+      ],
+      "connections": [
+        {
+          "to": "hongasandra",
+          "distance": 2.0,
+          "line": "yellow"
+        },
+        {
+          "to": "central_silk_board",
+          "distance": 2.0,
+          "line": "yellow"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "central_silk_board",
+      "name": "Central Silk Board",
+      "is_active": true,
+      "lines": [
+        "yellow",
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "bommanahalli",
+          "distance": 2.0,
+          "line": "yellow"
+        },
+        {
+          "to": "btm_layout",
+          "distance": 2.0,
+          "line": "yellow"
+        },
+        {
+          "to": "hsr_layout",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "btm_layout",
+      "name": "BTM Layout",
+      "is_active": true,
+      "lines": [
+        "yellow"
+      ],
+      "connections": [
+        {
+          "to": "central_silk_board",
+          "distance": 2.0,
+          "line": "yellow"
+        },
+        {
+          "to": "jayadeva_hospital",
+          "distance": 2.0,
+          "line": "yellow"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "jayadeva_hospital",
+      "name": "Jayadeva Hospital",
+      "is_active": true,
+      "lines": [
+        "yellow",
+        "pink"
+      ],
+      "connections": [
+        {
+          "to": "btm_layout",
+          "distance": 2.0,
+          "line": "yellow"
+        },
+        {
+          "to": "ragigudda",
+          "distance": 2.0,
+          "line": "yellow"
+        },
+        {
+          "to": "tavarekere",
+          "distance": 2.0,
+          "line": "pink"
+        },
+        {
+          "to": "jp_nagar_4th_phase",
+          "distance": 2.0,
+          "line": "pink"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "ragigudda",
+      "name": "Ragigudda",
+      "is_active": true,
+      "lines": [
+        "yellow"
+      ],
+      "connections": [
+        {
+          "to": "jayadeva_hospital",
+          "distance": 2.0,
+          "line": "yellow"
+        },
+        {
+          "to": "rashtreeya_vidyalaya_road",
+          "distance": 2.0,
+          "line": "yellow"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "kalena_agrahara",
+      "name": "Kalena Agrahara",
+      "is_active": true,
+      "lines": [
+        "pink"
+      ],
+      "connections": [
+        {
+          "to": "hulimavi",
+          "distance": 2.0,
+          "line": "pink"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "hulimavi",
+      "name": "Hulimavi",
+      "is_active": true,
+      "lines": [
+        "pink"
+      ],
+      "connections": [
+        {
+          "to": "kalena_agrahara",
+          "distance": 2.0,
+          "line": "pink"
+        },
+        {
+          "to": "iim_bangalore",
+          "distance": 2.0,
+          "line": "pink"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "iim_bangalore",
+      "name": "IIM Bangalore",
+      "is_active": true,
+      "lines": [
+        "pink"
+      ],
+      "connections": [
+        {
+          "to": "hulimavi",
+          "distance": 2.0,
+          "line": "pink"
+        },
+        {
+          "to": "jp_nagar_4th_phase",
+          "distance": 2.0,
+          "line": "pink"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "jp_nagar_4th_phase",
+      "name": "JP Nagar 4th Phase",
+      "is_active": true,
+      "lines": [
+        "pink"
+      ],
+      "connections": [
+        {
+          "to": "iim_bangalore",
+          "distance": 2.0,
+          "line": "pink"
+        },
+        {
+          "to": "jayadeva_hospital",
+          "distance": 2.0,
+          "line": "pink"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "tavarekere",
+      "name": "Tavarekere",
+      "is_active": true,
+      "lines": [
+        "pink"
+      ],
+      "connections": [
+        {
+          "to": "jayadeva_hospital",
+          "distance": 2.0,
+          "line": "pink"
+        },
+        {
+          "to": "dairy_circle",
+          "distance": 2.0,
+          "line": "pink"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "dairy_circle",
+      "name": "Dairy Circle",
+      "is_active": true,
+      "lines": [
+        "pink"
+      ],
+      "connections": [
+        {
+          "to": "tavarekere",
+          "distance": 2.0,
+          "line": "pink"
+        },
+        {
+          "to": "lakkasandra",
+          "distance": 2.0,
+          "line": "pink"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "lakkasandra",
+      "name": "Lakkasandra",
+      "is_active": true,
+      "lines": [
+        "pink"
+      ],
+      "connections": [
+        {
+          "to": "dairy_circle",
+          "distance": 2.0,
+          "line": "pink"
+        },
+        {
+          "to": "langford_town",
+          "distance": 2.0,
+          "line": "pink"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "langford_town",
+      "name": "Langford Town",
+      "is_active": true,
+      "lines": [
+        "pink"
+      ],
+      "connections": [
+        {
+          "to": "lakkasandra",
+          "distance": 2.0,
+          "line": "pink"
+        },
+        {
+          "to": "rashtriya_military_school",
+          "distance": 2.0,
+          "line": "pink"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "rashtriya_military_school",
+      "name": "Rashtriya Military School",
+      "is_active": true,
+      "lines": [
+        "pink"
+      ],
+      "connections": [
+        {
+          "to": "langford_town",
+          "distance": 2.0,
+          "line": "pink"
+        },
+        {
+          "to": "mg_road",
+          "distance": 2.0,
+          "line": "pink"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "shivajinagar",
+      "name": "Shivajinagar",
+      "is_active": true,
+      "lines": [
+        "pink"
+      ],
+      "connections": [
+        {
+          "to": "mg_road",
+          "distance": 2.0,
+          "line": "pink"
+        },
+        {
+          "to": "cantonment",
+          "distance": 2.0,
+          "line": "pink"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "cantonment",
+      "name": "Cantonment",
+      "is_active": true,
+      "lines": [
+        "pink"
+      ],
+      "connections": [
+        {
+          "to": "shivajinagar",
+          "distance": 2.0,
+          "line": "pink"
+        },
+        {
+          "to": "pottery_town",
+          "distance": 2.0,
+          "line": "pink"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "pottery_town",
+      "name": "Pottery Town",
+      "is_active": true,
+      "lines": [
+        "pink"
+      ],
+      "connections": [
+        {
+          "to": "cantonment",
+          "distance": 2.0,
+          "line": "pink"
+        },
+        {
+          "to": "tannery_road",
+          "distance": 2.0,
+          "line": "pink"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "tannery_road",
+      "name": "Tannery Road",
+      "is_active": true,
+      "lines": [
+        "pink"
+      ],
+      "connections": [
+        {
+          "to": "pottery_town",
+          "distance": 2.0,
+          "line": "pink"
+        },
+        {
+          "to": "venkateshpura",
+          "distance": 2.0,
+          "line": "pink"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "venkateshpura",
+      "name": "Venkateshpura",
+      "is_active": true,
+      "lines": [
+        "pink"
+      ],
+      "connections": [
+        {
+          "to": "tannery_road",
+          "distance": 2.0,
+          "line": "pink"
+        },
+        {
+          "to": "kadugundanahalli",
+          "distance": 2.0,
+          "line": "pink"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "kadugundanahalli",
+      "name": "Kadugundanahalli",
+      "is_active": true,
+      "lines": [
+        "pink"
+      ],
+      "connections": [
+        {
+          "to": "venkateshpura",
+          "distance": 2.0,
+          "line": "pink"
+        },
+        {
+          "to": "nagawara",
+          "distance": 2.0,
+          "line": "pink"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "nagawara",
+      "name": "Nagawara",
+      "is_active": true,
+      "lines": [
+        "pink",
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "kadugundanahalli",
+          "distance": 2.0,
+          "line": "pink"
+        },
+        {
+          "to": "veerannapalya",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "hbr_layout",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "hsr_layout",
+      "name": "HSR Layout",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "central_silk_board",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "agara_lake",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "agara_lake",
+      "name": "Agara Lake",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "hsr_layout",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "iblur",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "iblur",
+      "name": "Iblur",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "agara_lake",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "bellandur",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "bellandur",
+      "name": "Bellandur",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "iblur",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "devarabeesanahalli",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "devarabeesanahalli",
+      "name": "Devarabeesanahalli",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "bellandur",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "kadubeesanahalli",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "kadubeesanahalli",
+      "name": "Kadubeesanahalli",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "devarabeesanahalli",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "marathahalli",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "marathahalli",
+      "name": "Marathahalli",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "kadubeesanahalli",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "isro_karthik_nagar",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "isro_karthik_nagar",
+      "name": "ISRO (Karthik Nagar)",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "marathahalli",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "doddanekundi",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "doddanekundi",
+      "name": "Doddanekundi",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "isro_karthik_nagar",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "drdo_sports_complex",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "drdo_sports_complex",
+      "name": "DRDO Sports Complex",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "doddanekundi",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "mahadevapura",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "mahadevapura",
+      "name": "Mahadevapura",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "drdo_sports_complex",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "kr_pura",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "kasturinagar",
+      "name": "Kasturinagar",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "kr_pura",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "horamavu",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "horamavu",
+      "name": "Horamavu",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "kasturinagar",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "hrbr_layout",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "hrbr_layout",
+      "name": "HRBR Layout",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "horamavu",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "kalyan_nagar",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "kalyan_nagar",
+      "name": "Kalyan Nagar",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "hrbr_layout",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "hbr_layout",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "hbr_layout",
+      "name": "HBR Layout",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "kalyan_nagar",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "nagawara",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "veerannapalya",
+      "name": "Veerannapalya",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "nagawara",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "kempapura",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "kempapura",
+      "name": "Kempapura",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "veerannapalya",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "hebbal",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "hebbal",
+      "name": "Hebbal",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "kempapura",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "kodigehalli",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "kodigehalli",
+      "name": "Kodigehalli",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "hebbal",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "jakkur_cross",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "jakkur_cross",
+      "name": "Jakkur Cross",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "kodigehalli",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "yelahanka",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "yelahanka",
+      "name": "Yelahanka",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "jakkur_cross",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "bagalur_cross",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "bagalur_cross",
+      "name": "Bagalur Cross",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "yelahanka",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "bettahalasuru",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "bettahalasuru",
+      "name": "Bettahalasuru",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "bagalur_cross",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "doddajala",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "doddajala",
+      "name": "Doddajala",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "bettahalasuru",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "airport_city",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "airport_city",
+      "name": "Airport City",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "doddajala",
+          "distance": 2.0,
+          "line": "blue"
+        },
+        {
+          "to": "airport_terminal",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    },
+    {
+      "id": "airport_terminal",
+      "name": "Kempegowda International Airport Terminal",
+      "is_active": true,
+      "lines": [
+        "blue"
+      ],
+      "connections": [
+        {
+          "to": "airport_city",
+          "distance": 2.0,
+          "line": "blue"
+        }
+      ],
+      "coordinates": {
+        "lat": 12.978,
+        "lng": 77.567
+      }
+    }
+  ]
+}

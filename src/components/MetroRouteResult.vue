@@ -73,67 +73,187 @@
 </template>
 
 <script>
-import { ref, computed, watch } from 'vue';
-import { metroStations } from '../assets/metro-data.js';
+// import { useQuasar } from 'quasar';
+import metroData from 'src/assets/metrojson.json';
 
 export default {
-  name: 'StationSelector',
-  props: {
-    modelValue: {
-      type: Object,
-      default: () => null
-    },
-    label: {
-      type: String,
-      default: 'Station'
-    }
-  },
-  emits: ['update:modelValue'],
+  name: 'MetroRouter',
   
-  setup(props, { emit }) {
-    const search = ref('');
-    const searchQuery = ref('');
-    const showDialog = ref(false);
-    const stations = ref(metroStations);
-
-    // Update the display value when model changes
-    watch(() => props.modelValue, (newValue) => {
-      if (newValue) {
-        search.value = newValue.name;
-      } else {
-        search.value = '';
+  setup() {
+    // const $q = useQuasar();
+    
+    // Dijkstra's algorithm for shortest path
+    const findShortestPath = (start, end) => {
+      const stations = metroData.stations;
+      const distances = {};
+      const previous = {};
+      const unvisited = new Set();
+      
+      // Initialize distances with Infinity except for starting node
+      stations.forEach(station => {
+        if (station.is_active) {
+          distances[station.id] = station.id === start ? 0 : Infinity;
+          unvisited.add(station.id);
+          previous[station.id] = null;
+        }
+      });
+      
+      while (unvisited.size > 0) {
+        // Find unvisited node with smallest distance
+        let current = null;
+        let smallestDistance = Infinity;
+        
+        unvisited.forEach(stationId => {
+          if (distances[stationId] < smallestDistance) {
+            smallestDistance = distances[stationId];
+            current = stationId;
+          }
+        });
+        
+        // If we've reached our destination or there's no path
+        if (current === null || current === end) break;
+        
+        // Remove current from unvisited
+        unvisited.delete(current);
+        
+        // Find current station object
+        const currentStation = stations.find(s => s.id === current);
+        
+        // Check each neighbor
+        currentStation.connections.forEach(connection => {
+          const neighbor = connection.to;
+          const neighborStation = stations.find(s => s.id === neighbor);
+          
+          // Skip if neighbor is not active
+          if (!neighborStation.is_active) return;
+          
+          const distance = connection.distance;
+          const totalDistance = distances[current] + distance;
+          
+          if (totalDistance < distances[neighbor]) {
+            distances[neighbor] = totalDistance;
+            previous[neighbor] = { 
+              station: current, 
+              line: connection.line 
+            };
+          }
+        });
       }
-    }, { immediate: true });
-
-    const filteredStations = computed(() => {
-      if (!searchQuery.value) {
-        return stations.value;
+      
+      // Reconstruct path
+      const path = [];
+      let current = end;
+      
+      while (current !== null) {
+        const station = stations.find(s => s.id === current);
+        path.unshift({
+          id: current,
+          name: station.name,
+          line: previous[current]?.line
+        });
+        current = previous[current]?.station || null;
       }
-      const query = searchQuery.value.toLowerCase();
-      return stations.value.filter(station => 
-        station.name.toLowerCase().includes(query)
-      );
-    });
-
-    const selectStation = (station) => {
-      search.value = station.name;
-      emit('update:modelValue', station);
-      showDialog.value = false;
-      searchQuery.value = '';
+      
+      return {
+        path,
+        distance: distances[end],
+        possible: distances[end] !== Infinity
+      };
     };
-
-    const clearSelection = () => {
-      search.value = '';
-      emit('update:modelValue', null);
+    
+    // Find route with least line changes
+    const findLeastExchanges = (start, end) => {
+      const stations = metroData.stations;
+      const startStation = stations.find(s => s.id === start);
+      const endStation = stations.find(s => s.id === end);
+      
+      if (!startStation || !endStation || !startStation.is_active || !endStation.is_active) {
+        return { path: [], exchanges: 0, possible: false };
+      }
+      
+      // BFS to find least exchanges
+      const queue = [];
+      const visited = new Set();
+      const paths = {};
+      
+      // Initialize queue with starting station
+      startStation.lines.forEach(line => {
+        queue.push({ 
+          station: start, 
+          line, 
+          path: [{ id: start, name: startStation.name, line }],
+          exchanges: 0
+        });
+      });
+      
+      while (queue.length > 0) {
+        const { station, line, path, exchanges } = queue.shift();
+        const key = `${station}-${line}`;
+        
+        // Skip if we've visited this station-line combination
+        if (visited.has(key)) continue;
+        visited.add(key);
+        
+        // Save this path
+        paths[key] = { path, exchanges };
+        
+        // If we've reached the destination, we're done
+        if (station === end) continue;
+        
+        // Get current station object
+        const currentStation = stations.find(s => s.id === station);
+        
+        // Process connections
+        currentStation.connections.forEach(connection => {
+          const neighbor = connection.to;
+          const neighborStation = stations.find(s => s.id === neighbor);
+          
+          // Skip if neighbor is not active
+          if (!neighborStation?.is_active) return;
+          
+          // Check if we need to change lines
+          const connectionLine = connection.line;
+          const newExchanges = connectionLine === line ? exchanges : exchanges + 1;
+          
+          // Build new path
+          const newPath = [...path, { 
+            id: neighbor, 
+            name: neighborStation.name, 
+            line: connectionLine 
+          }];
+          
+          // Add to queue
+          queue.push({ 
+            station: neighbor, 
+            line: connectionLine, 
+            path: newPath, 
+            exchanges: newExchanges 
+          });
+        });
+      }
+      
+      // Find the path to end with least exchanges
+      let bestPath = null;
+      let leastExchanges = Infinity;
+      
+      endStation.lines.forEach(line => {
+        const key = `${end}-${line}`;
+        if (paths[key] && paths[key].exchanges < leastExchanges) {
+          bestPath = paths[key].path;
+          leastExchanges = paths[key].exchanges;
+        }
+      }); 
+      
+      return {
+        path: bestPath || [],
+        exchanges: leastExchanges,
+        possible: bestPath !== null
+      };
     };
-
+    
     return {
-      search,
-      searchQuery,
-      showDialog,
-      filteredStations,
-      selectStation,
-      clearSelection
+      findShortestPath,
+      findLeastExchanges
     };
   }
 };

@@ -56,42 +56,107 @@ export const FindRoutePageVue = `
 </template>
 
 <script>
-import { metroStations, findRoute } from 'src/assets/metro-data.js';
 import MetroRouteResult from 'components/MetroRouteResult.vue';
+import metroData from 'src/assets/metrojson.json';
 
 export default {
   name: 'FindRoutePage',
   components: {
     MetroRouteResult
   },
-  data () {
+  data() {
     return {
       fromStation: null,
       toStation: null,
       routeResult: null,
-      stationOptions: metroStations.map(station => ({
-        id: station.id,
-        name: station.name,
-        line: station.line
-      }))
-    }
+      stationOptions: metroData.stations
+        .filter(station => station.is_active)
+        .map(station => ({
+          id: station.id,
+          name: station.name
+        })),
+      graph: {}
+    };
+  },
+  created() {
+    this.buildGraph();
   },
   methods: {
+    buildGraph() {
+      const graph = {};
+      metroData.stations.forEach(station => {
+        if (station.is_active) {
+          graph[station.id] = station.connections
+            .filter(connection => {
+              const targetStation = metroData.stations.find(s => s.id === connection.to);
+              return targetStation && targetStation.is_active;
+            })
+            .map(connection => ({
+              to: connection.to,
+              distance: connection.distance
+            }));
+        }
+      });
+      this.graph = graph;
+    },
     findRoute() {
       if (this.fromStation && this.toStation && this.fromStation !== this.toStation) {
-        this.routeResult = findRoute(this.fromStation, this.toStation);
+        this.routeResult = this.dijkstra(this.fromStation, this.toStation);
       }
+    },
+    dijkstra(start, end) {
+      const distances = {};
+      const previous = {};
+      const queue = new Set(Object.keys(this.graph));
+
+      // Initialize distances
+      queue.forEach(node => {
+        distances[node] = Infinity;
+        previous[node] = null;
+      });
+      distances[start] = 0;
+
+      while (queue.size > 0) {
+        // Find the node with the smallest distance
+        const current = Array.from(queue).reduce((minNode, node) =>
+          distances[node] < distances[minNode] ? node : minNode
+        );
+
+        queue.delete(current);
+
+        // If we reached the destination, build the path
+        if (current === end) {
+          const path = [];
+          let temp = end;
+          while (temp) {
+            path.unshift(temp);
+            temp = previous[temp];
+          }
+          return { path, distance: distances[end] };
+        }
+
+        // Update distances for neighbors
+        this.graph[current].forEach(neighbor => {
+          const alt = distances[current] + neighbor.distance;
+          if (alt < distances[neighbor.to]) {
+            distances[neighbor.to] = alt;
+            previous[neighbor.to] = current;
+          }
+        });
+      }
+
+      // If no path is found
+      return null;
     },
     swapStations() {
       const temp = this.fromStation;
       this.fromStation = this.toStation;
       this.toStation = temp;
-      
+
       if (this.routeResult) {
         this.findRoute();
       }
     }
   }
-}
+};
 </script>
-`;

@@ -27,37 +27,37 @@ export default {
           icon: 'directions',
           route: '/find-route',
           color: 'bg-primary'
-        },
-        {
-          title: 'Tickets',
-          icon: 'receipt',
-          route: '/tickets',
-          color: 'bg-secondary'
-        },
-        {
-          title: 'Fare Calculator',
-          icon: 'calculate',
-          route: '/fare-calculator',
-          color: 'bg-accent'
-        },
-        {
-          title: 'Metro Map',
-          icon: 'map',
-          route: '/map',
-          color: 'bg-positive'
-        },
-        {
-          title: 'Favorites',
-          icon: 'star',
-          route: '/favorites',
-          color: 'bg-negative'
-        },
-        {
-          title: 'Metro Info',
-          icon: 'info',
-          route: '/info',
-          color: 'bg-info'
         }
+        // {
+        //   title: 'Tickets',
+        //   icon: 'receipt',
+        //   route: '/tickets',
+        //   color: 'bg-secondary'
+        // },
+        // {
+        //   title: 'Fare Calculator',
+        //   icon: 'calculate',
+        //   route: '/fare-calculator',
+        //   color: 'bg-accent'
+        // },
+        // {
+        //   title: 'Metro Map',
+        //   icon: 'map',
+        //   route: '/map',
+        //   color: 'bg-positive'
+        // },
+        // {
+        //   title: 'Favorites',
+        //   icon: 'star',
+        //   route: '/favorites',
+        //   color: 'bg-negative'
+        // },
+        // {
+        //   title: 'Metro Info',
+        //   icon: 'info',
+        //   route: '/info',
+        //   color: 'bg-info'
+        // }
       ]
     }
   },
