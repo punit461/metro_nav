@@ -10,13 +10,14 @@
       "connections": [
         {
           "to": "channasandra_hopefarm",
-          "distance": 2.0,
-          "line": "purple"
+          "distance": 1.5,
+          "line": "purple",
+          "fare": 10
         }
       ],
       "coordinates": {
-        "lat": 12.978,
-        "lng": 77.567
+        "lat": 12.995702,
+        "lng": 77.75
       }
     },
     {
@@ -1478,7 +1479,7 @@
           "line": "green"
         },
         {
-          "to": "peenya_industrial_area",
+          "to": "peenya_industry",
           "distance": 2.0,
           "line": "green"
         }
@@ -1489,8 +1490,8 @@
       }
     },
     {
-      "id": "peenya_industrial_area",
-      "name": "Peenya Industrial Area",
+      "id": "peenya_industry",
+      "name": "Peenya Industry",
       "is_active": true,
       "lines": [
         "green"
@@ -1521,7 +1522,7 @@
       ],
       "connections": [
         {
-          "to": "peenya_industrial_area",
+          "to": "peenya_industry",
           "distance": 2.0,
           "line": "green"
         },
@@ -1654,7 +1655,7 @@
     {
       "id": "bommasandra",
       "name": "Bommasandra",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "yellow"
       ],
@@ -1673,7 +1674,7 @@
     {
       "id": "hebbagodi",
       "name": "Hebbagodi",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "yellow"
       ],
@@ -1697,7 +1698,7 @@
     {
       "id": "huskur_road",
       "name": "Huskur Road",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "yellow"
       ],
@@ -1721,7 +1722,7 @@
     {
       "id": "konnapana_agrahara",
       "name": "Konnapana Agrahara",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "yellow"
       ],
@@ -1745,7 +1746,7 @@
     {
       "id": "electronic_city",
       "name": "Electronic City",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "yellow"
       ],
@@ -1769,7 +1770,7 @@
     {
       "id": "beratena_agrahara",
       "name": "Beratena Agrahara",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "yellow"
       ],
@@ -1793,7 +1794,7 @@
     {
       "id": "hosa_road",
       "name": "Hosa Road",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "yellow"
       ],
@@ -1817,7 +1818,7 @@
     {
       "id": "singasandra",
       "name": "Singasandra",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "yellow"
       ],
@@ -1841,7 +1842,7 @@
     {
       "id": "kudlu_gate",
       "name": "Kudlu Gate",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "yellow"
       ],
@@ -1865,7 +1866,7 @@
     {
       "id": "hongasandra",
       "name": "Hongasandra",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "yellow"
       ],
@@ -1889,7 +1890,7 @@
     {
       "id": "bommanahalli",
       "name": "Bommanahalli",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "yellow"
       ],
@@ -1943,7 +1944,7 @@
     {
       "id": "btm_layout",
       "name": "BTM Layout",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "yellow"
       ],
@@ -2002,7 +2003,7 @@
     {
       "id": "ragigudda",
       "name": "Ragigudda",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "yellow"
       ],
@@ -2026,7 +2027,7 @@
     {
       "id": "kalena_agrahara",
       "name": "Kalena Agrahara",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "pink"
       ],
@@ -2045,7 +2046,7 @@
     {
       "id": "hulimavi",
       "name": "Hulimavi",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "pink"
       ],
@@ -2069,7 +2070,7 @@
     {
       "id": "iim_bangalore",
       "name": "IIM Bangalore",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "pink"
       ],
@@ -2093,7 +2094,7 @@
     {
       "id": "jp_nagar_4th_phase",
       "name": "JP Nagar 4th Phase",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "pink"
       ],
@@ -2117,7 +2118,7 @@
     {
       "id": "tavarekere",
       "name": "Tavarekere",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "pink"
       ],
@@ -2141,7 +2142,7 @@
     {
       "id": "dairy_circle",
       "name": "Dairy Circle",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "pink"
       ],
@@ -2165,7 +2166,7 @@
     {
       "id": "lakkasandra",
       "name": "Lakkasandra",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "pink"
       ],
@@ -2189,7 +2190,7 @@
     {
       "id": "langford_town",
       "name": "Langford Town",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "pink"
       ],
@@ -2213,7 +2214,7 @@
     {
       "id": "rashtriya_military_school",
       "name": "Rashtriya Military School",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "pink"
       ],
@@ -2237,7 +2238,7 @@
     {
       "id": "shivajinagar",
       "name": "Shivajinagar",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "pink"
       ],
@@ -2261,7 +2262,7 @@
     {
       "id": "cantonment",
       "name": "Cantonment",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "pink"
       ],
@@ -2285,7 +2286,7 @@
     {
       "id": "pottery_town",
       "name": "Pottery Town",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "pink"
       ],
@@ -2309,7 +2310,7 @@
     {
       "id": "tannery_road",
       "name": "Tannery Road",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "pink"
       ],
@@ -2333,7 +2334,7 @@
     {
       "id": "venkateshpura",
       "name": "Venkateshpura",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "pink"
       ],
@@ -2357,7 +2358,7 @@
     {
       "id": "kadugundanahalli",
       "name": "Kadugundanahalli",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "pink"
       ],
@@ -2411,7 +2412,7 @@
     {
       "id": "hsr_layout",
       "name": "HSR Layout",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -2435,7 +2436,7 @@
     {
       "id": "agara_lake",
       "name": "Agara Lake",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -2459,7 +2460,7 @@
     {
       "id": "iblur",
       "name": "Iblur",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -2483,7 +2484,7 @@
     {
       "id": "bellandur",
       "name": "Bellandur",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -2507,7 +2508,7 @@
     {
       "id": "devarabeesanahalli",
       "name": "Devarabeesanahalli",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -2531,7 +2532,7 @@
     {
       "id": "kadubeesanahalli",
       "name": "Kadubeesanahalli",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -2555,7 +2556,7 @@
     {
       "id": "marathahalli",
       "name": "Marathahalli",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -2579,7 +2580,7 @@
     {
       "id": "isro_karthik_nagar",
       "name": "ISRO (Karthik Nagar)",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -2603,7 +2604,7 @@
     {
       "id": "doddanekundi",
       "name": "Doddanekundi",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -2627,7 +2628,7 @@
     {
       "id": "drdo_sports_complex",
       "name": "DRDO Sports Complex",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -2651,7 +2652,7 @@
     {
       "id": "mahadevapura",
       "name": "Mahadevapura",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -2675,7 +2676,7 @@
     {
       "id": "kasturinagar",
       "name": "Kasturinagar",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -2699,7 +2700,7 @@
     {
       "id": "horamavu",
       "name": "Horamavu",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -2723,7 +2724,7 @@
     {
       "id": "hrbr_layout",
       "name": "HRBR Layout",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -2747,7 +2748,7 @@
     {
       "id": "kalyan_nagar",
       "name": "Kalyan Nagar",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -2771,7 +2772,7 @@
     {
       "id": "hbr_layout",
       "name": "HBR Layout",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -2795,7 +2796,7 @@
     {
       "id": "veerannapalya",
       "name": "Veerannapalya",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -2819,7 +2820,7 @@
     {
       "id": "kempapura",
       "name": "Kempapura",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -2843,7 +2844,7 @@
     {
       "id": "hebbal",
       "name": "Hebbal",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -2867,7 +2868,7 @@
     {
       "id": "kodigehalli",
       "name": "Kodigehalli",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -2891,7 +2892,7 @@
     {
       "id": "jakkur_cross",
       "name": "Jakkur Cross",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -2915,7 +2916,7 @@
     {
       "id": "yelahanka",
       "name": "Yelahanka",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -2939,7 +2940,7 @@
     {
       "id": "bagalur_cross",
       "name": "Bagalur Cross",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -2963,7 +2964,7 @@
     {
       "id": "bettahalasuru",
       "name": "Bettahalasuru",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -2987,7 +2988,7 @@
     {
       "id": "doddajala",
       "name": "Doddajala",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -3011,7 +3012,7 @@
     {
       "id": "airport_city",
       "name": "Airport City",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -3035,7 +3036,7 @@
     {
       "id": "airport_terminal",
       "name": "Kempegowda International Airport Terminal",
-      "is_active": true,
+      "is_active": false,
       "lines": [
         "blue"
       ],
@@ -3050,6 +3051,176 @@
         "lat": 12.978,
         "lng": 77.567
       }
+    }
+  ],
+  "lines": [
+    {
+      "id": "yellow",
+      "name": "Yellow Line",
+      "is_active": false,
+      "stations": [
+        "bommasandra",
+        "hebbagodi",
+        "huskur_road",
+        "konnapana_agrahara",
+        "electronic_city",
+        "beratena_agrahara",
+        "hosa_road",
+        "singasandra",
+        "kudlu_gate",
+        "hongasandra",
+        "bommanahalli",
+        "central_silk_board",
+        "btm_layout",
+        "jayadeva_hospital",
+        "ragigudda",
+        "rasthreeya_vidyalaya_road"
+      ]
+    },
+    {
+      "id": "blue",
+      "name": "Blue Line",
+      "is_active": false,
+      "stations": [
+        "central_silk_board",
+        "hsr_layout",
+        "agara_lake",
+        "iblur",
+        "bellandur",
+        "devarabeesanahalli",
+        "kadubeesanahalli",
+        "marathahalli",
+        "isro_karthik_nagar",
+        "doddanekundi",
+        "drdo_sports_complex",
+        "mahadevapura",
+        "kr_pura",
+        "kasturinagar",
+        "horamavu",
+        "hrbr_layout",
+        "kalyan_nagar",
+        "hbr_layout",
+        "nagawara",
+        "veerannapalya",
+        "kempapura",
+        "hebbal",
+        "kodigehalli",
+        "jakkur_cross",
+        "yelahanka",
+        "bagalur_cross",
+        "bettahalasuru",
+        "doddajala",
+        "airport_city",
+        "airport_terminal"
+      ]
+    },
+    {
+      "id": "pink",
+      "name": "Pink Line",
+      "is_active": false,
+      "stations": [
+        "kalena_agrahara",
+        "hulimavi",
+        "iim_bangalore",
+        "jp_nagar_4th_phase",
+        "jayadeva_hospital",
+        "tavarekere",
+        "dairy_circle",
+        "lakkasandra",
+        "langford_town",
+        "rashtriya_military_school",
+        "mg_road",
+        "shivajinagar",
+        "cantonment",
+        "pottery_town",
+        "tannery_road",
+        "venkateshpura",
+        "kadugundanahalli",
+        "nagawara"
+      ]
+    },
+    {
+      "id": "green",
+      "name": "Green Line",
+      "is_active": true,
+      "stations": [
+        "silk_institute",
+        "thalaghattapura",
+        "vajarahalli",
+        "doddakallasandra",
+        "konanakunte_cross",
+        "yelachenahalli",
+        "jayaprakash_nagar",
+        "banashankari",
+        "rasthreeya_vidyalaya_road",
+        "jayanagar",
+        "south_end_circle",
+        "lalbagh",
+        "national_college",
+        "krishna_rajendra_market",
+        "chickpete",
+        "kempegowda_stn_majestic",
+        "sampige_road",
+        "srirampura",
+        "kuvempu_road",
+        "rajajinagar",
+        "mahalakshmi",
+        "sandal_soap_factory",
+        "yeshwantpur",
+        "goraguntepalya",
+        "peenya",
+        "peenya_industry",
+        "jalahalli",
+        "dasarahalli",
+        "nagasandra",
+        "manjunath_nagar",
+        "chikkabidarakallu",
+        "madavara"
+      ]
+    },
+    {
+      "id": "purple",
+      "name": "Purple Line",
+      "is_active": true,
+      "stations": [
+        "challaghatta",
+        "kengeri",
+        "kengeri_bus_terminal",
+        "pattanagere",
+        "jnanabharathi",
+        "rajarajeshwari_nagar",
+        "nayandahalli",
+        "mysuru_road",
+        "deepanjali_nagar",
+        "attiguppe",
+        "vijayanagar",
+        "hosahalli",
+        "magadi_road",
+        "ksr_railway_station",
+        "kempegowda_stn_majestic",
+        "central_college",
+        "vidhana_soudha",
+        "cubbon_park",
+        "mg_road",
+        "trinity",
+        "halasuru",
+        "indiranagar",
+        "swami_vivekananda_road",
+        "baiyappanahalli",
+        "benniganahalli",
+        "kr_pura",
+        "singayyanapalya",
+        "garudacharapalya",
+        "hoodi",
+        "seetharamapalya",
+        "kundalahalli",
+        "nallurhalli",
+        "sri_sathya_sai_hospital",
+        "pattandur_agrahara",
+        "kadugodi_tree_park",
+        "channasandra_hopefarm",
+        "whitefield_kadugodi"
+      ]
     }
   ]
 }

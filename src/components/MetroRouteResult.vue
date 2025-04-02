@@ -1,266 +1,222 @@
+<!-- MetroRouteResult.vue -->
 <template>
-  <div class="station-selector">
-    <div class="q-pa-md">
-      <q-input
-        v-model="search"
-        :label="label"
-        outlined
-        dense
-        clearable
-        @click="showDialog = true"
-        @clear="clearSelection"
-        readonly
-      >
-        <template v-slot:append>
-          <q-icon name="place" />
-        </template>
-      </q-input>
-    </div>
+  <q-card class="route-result-card q-mb-md">
+    <q-card-section class="route-header bg-primary text-white">
+      <div class="row justify-between items-center">
+        <div class="col-12 col-md-3">
+          <div class="text-h6">Route Summary</div>
+          <div class="text-subtitle2">{{ result.path[0] }} to {{ result.path[result.path.length - 1] }}</div>
+        </div>
+        <div class="col-12 col-md-9">
+          <div class="row q-col-gutter-md">
+            <div class="col-6 col-md-3 text-center">
+              <div class="text-h6">{{ result.distance }} km</div>
+              <div class="text-caption">Distance</div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="text-h6">₹{{ calculateFare(result.distance) }}</div>
+              <div class="text-caption">Fare</div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="text-h6">{{ calculateTime(result.distance) }} min</div>
+              <div class="text-caption">Est. Time</div>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+              <div class="text-h6">{{ countInterchanges(result.path) }}</div>
+              <div class="text-caption">Interchanges</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </q-card-section>
 
-    <q-dialog v-model="showDialog" position="bottom">
-      <q-card style="width: 100%; max-width: 500px">
-        <q-card-section>
-          <div class="text-h6">Select {{ label }} Station</div>
-        </q-card-section>
-
-        <q-card-section class="q-pa-none">
-          <q-input
-            v-model="searchQuery"
-            label="Search stations"
-            outlined
-            dense
-            clearable
-            class="q-ma-md"
-          >
-            <template v-slot:append>
-              <q-icon name="search" />
-            </template>
-          </q-input>
-
-          <q-list separator>
-            <q-item
-              v-for="station in filteredStations"
-              :key="station.id"
-              clickable
-              v-ripple
-              @click="selectStation(station)"
-            >
-              <q-item-section>
-                <q-item-label>{{ station.name }}</q-item-label>
-                <q-item-label caption>
-                  <q-chip
-                    v-for="line in station.lines"
-                    :key="line.id"
-                    :style="{ backgroundColor: line.color }"
-                    text-color="white"
-                    size="sm"
-                    class="q-mr-xs"
-                  >
-                    {{ line.name }}
-                  </q-chip>
-                </q-item-label>
-              </q-item-section>
-            </q-item>
-          </q-list>
-        </q-card-section>
-
-        <q-card-actions align="right" class="bg-white text-teal">
-          <q-btn flat label="Close" v-close-popup />
-        </q-card-actions>
-      </q-card>
-    </q-dialog>
-  </div>
+    <q-card-section>
+      <div class="station-list">
+        <div v-for="(station, index) in result.path" :key="index" class="station-item">
+          <div class="station-timeline">
+            <div class="timeline-line" :class="getLineColor(station, index)"></div>
+            <div class="timeline-dot" :class="getLineColor(station, index)"></div>
+            <div v-if="index < result.path.length - 1 && isInterchange(index)" class="interchange-indicator">
+              <q-icon name="swap_horiz" color="negative" size="sm" />
+            </div>
+          </div>
+          <div class="station-details">
+            <div class="station-name">{{ station }}</div>
+            <div class="station-info">
+              <span v-if="index === 0" class="platform-info">
+                Platform {{ getPlatform(station) }} • {{ getLineInfo(station).name }}
+              </span>
+              <span v-else-if="isInterchange(index)" class="platform-info">
+                Change to Platform {{ getPlatform(result.path[index + 1]) }} • {{ getLineInfo(result.path[index + 1]).name }}
+              </span>
+              <span v-else class="platform-info">
+                Platform {{ getPlatform(station) }} • {{ getLineInfo(station).name }}
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </q-card-section>
+  </q-card>
 </template>
 
 <script>
-// import { useQuasar } from 'quasar';
+import { defineComponent } from 'vue';
 import metroData from 'src/assets/metrojson.json';
 
-export default {
-  name: 'MetroRouter',
-  
-  setup() {
-    // const $q = useQuasar();
-    
-    // Dijkstra's algorithm for shortest path
-    const findShortestPath = (start, end) => {
-      const stations = metroData.stations;
-      const distances = {};
-      const previous = {};
-      const unvisited = new Set();
-      
-      // Initialize distances with Infinity except for starting node
-      stations.forEach(station => {
-        if (station.is_active) {
-          distances[station.id] = station.id === start ? 0 : Infinity;
-          unvisited.add(station.id);
-          previous[station.id] = null;
+export default defineComponent({
+  name: 'MetroRouteResult',
+  props: {
+    result: {
+      type: Object,
+      required: true
+    }
+  },
+  methods: {
+    calculateFare(distance) {
+      // Basic fare calculation - example logic
+      const baseFare = 10;
+      const perKmRate = 5;
+      return Math.round(baseFare + (distance * perKmRate));
+    },
+    calculateTime(distance) {
+      // Approximate travel time calculation - example logic
+      const avgSpeedKmPerMin = 0.5; // 30 km/h = 0.5 km/min
+      const baseTime = 2; // base time in minutes for each station stop
+      const stationCount = this.result.path.length;
+      return Math.round((distance / avgSpeedKmPerMin) + (baseTime * (stationCount - 1)));
+    },
+    countInterchanges(path) {
+      let interchanges = 0;
+      for (let i = 1; i < path.length - 1; i++) {
+        if (this.isInterchange(i)) {
+          interchanges++;
         }
-      });
-      
-      while (unvisited.size > 0) {
-        // Find unvisited node with smallest distance
-        let current = null;
-        let smallestDistance = Infinity;
-        
-        unvisited.forEach(stationId => {
-          if (distances[stationId] < smallestDistance) {
-            smallestDistance = distances[stationId];
-            current = stationId;
-          }
-        });
-        
-        // If we've reached our destination or there's no path
-        if (current === null || current === end) break;
-        
-        // Remove current from unvisited
-        unvisited.delete(current);
-        
-        // Find current station object
-        const currentStation = stations.find(s => s.id === current);
-        
-        // Check each neighbor
-        currentStation.connections.forEach(connection => {
-          const neighbor = connection.to;
-          const neighborStation = stations.find(s => s.id === neighbor);
-          
-          // Skip if neighbor is not active
-          if (!neighborStation.is_active) return;
-          
-          const distance = connection.distance;
-          const totalDistance = distances[current] + distance;
-          
-          if (totalDistance < distances[neighbor]) {
-            distances[neighbor] = totalDistance;
-            previous[neighbor] = { 
-              station: current, 
-              line: connection.line 
-            };
-          }
-        });
       }
-      
-      // Reconstruct path
-      const path = [];
-      let current = end;
-      
-      while (current !== null) {
-        const station = stations.find(s => s.id === current);
-        path.unshift({
-          id: current,
-          name: station.name,
-          line: previous[current]?.line
-        });
-        current = previous[current]?.station || null;
+      return interchanges;
+    },
+    isInterchange(index) {
+      if (index < this.result.path.length - 1) {
+        const currentStation = this.getStationByName(this.result.path[index]);
+        const nextStation = this.getStationByName(this.result.path[index + 1]);
+        // Check if they are on different lines
+        return this.getLineInfo(currentStation.name).id !== this.getLineInfo(nextStation.name).id;
       }
-      
-      return {
-        path,
-        distance: distances[end],
-        possible: distances[end] !== Infinity
-      };
-    };
-    
-    // Find route with least line changes
-    const findLeastExchanges = (start, end) => {
-      const stations = metroData.stations;
-      const startStation = stations.find(s => s.id === start);
-      const endStation = stations.find(s => s.id === end);
-      
-      if (!startStation || !endStation || !startStation.is_active || !endStation.is_active) {
-        return { path: [], exchanges: 0, possible: false };
-      }
-      
-      // BFS to find least exchanges
-      const queue = [];
-      const visited = new Set();
-      const paths = {};
-      
-      // Initialize queue with starting station
-      startStation.lines.forEach(line => {
-        queue.push({ 
-          station: start, 
-          line, 
-          path: [{ id: start, name: startStation.name, line }],
-          exchanges: 0
-        });
-      });
-      
-      while (queue.length > 0) {
-        const { station, line, path, exchanges } = queue.shift();
-        const key = `${station}-${line}`;
-        
-        // Skip if we've visited this station-line combination
-        if (visited.has(key)) continue;
-        visited.add(key);
-        
-        // Save this path
-        paths[key] = { path, exchanges };
-        
-        // If we've reached the destination, we're done
-        if (station === end) continue;
-        
-        // Get current station object
-        const currentStation = stations.find(s => s.id === station);
-        
-        // Process connections
-        currentStation.connections.forEach(connection => {
-          const neighbor = connection.to;
-          const neighborStation = stations.find(s => s.id === neighbor);
-          
-          // Skip if neighbor is not active
-          if (!neighborStation?.is_active) return;
-          
-          // Check if we need to change lines
-          const connectionLine = connection.line;
-          const newExchanges = connectionLine === line ? exchanges : exchanges + 1;
-          
-          // Build new path
-          const newPath = [...path, { 
-            id: neighbor, 
-            name: neighborStation.name, 
-            line: connectionLine 
-          }];
-          
-          // Add to queue
-          queue.push({ 
-            station: neighbor, 
-            line: connectionLine, 
-            path: newPath, 
-            exchanges: newExchanges 
-          });
-        });
-      }
-      
-      // Find the path to end with least exchanges
-      let bestPath = null;
-      let leastExchanges = Infinity;
-      
-      endStation.lines.forEach(line => {
-        const key = `${end}-${line}`;
-        if (paths[key] && paths[key].exchanges < leastExchanges) {
-          bestPath = paths[key].path;
-          leastExchanges = paths[key].exchanges;
-        }
-      }); 
-      
-      return {
-        path: bestPath || [],
-        exchanges: leastExchanges,
-        possible: bestPath !== null
-      };
-    };
-    
-    return {
-      findShortestPath,
-      findLeastExchanges
-    };
+      return false;
+    },
+    getStationByName(name) {
+      return metroData.stations.find(station => station.name === name) || {};
+    },
+    getLineInfo(stationName) {
+      const station = this.getStationByName(stationName);
+      const lineId = station.lines[0];
+      const line = metroData.lines ? metroData.lines.find(line => line.id === lineId) : { id: 'unknown', name: 'Unknown Line', color: 'grey' };
+      return line || { id: 'unknown', name: 'Unknown Line', color: 'grey' };
+    },
+    getLineColor(stationName) {
+      const line = this.getLineInfo(stationName);
+      return `bg-${line.id || 'primary'}`;
+    },
+    getPlatform(stationName) {
+      const station = this.getStationByName(stationName);
+      return station.platform || Math.floor(Math.random() * 4) + 1; // Random platform if not specified
+    }
   }
-};
+});
 </script>
 
-<style scoped>
-.station-selector {
-  width: 100%;
+<style lang="scss" scoped>
+.route-result-card {
+  border-radius: 8px;
+  overflow: hidden;
 }
+
+.route-header {
+  padding: 16px;
+}
+
+.station-list {
+  padding: 8px 0;
+}
+
+.station-item {
+  display: flex;
+  padding: 12px 0;
+  position: relative;
+}
+
+.station-timeline {
+  width: 40px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: var(--q-primary);
+  z-index: 1;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--q-primary);
+  position: relative;
+  z-index: 2;
+}
+
+.interchange-indicator {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: -5px;
+  z-index: 3;
+  background-color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.station-details {
+  flex: 1;
+  padding-left: 16px;
+}
+
+.station-name {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.station-info {
+  font-size: 14px;
+  color: #666;
+}
+
+.platform-info {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Line color classes - adjust based on your metro system's colors */
+.bg-red { background-color: #E53935 !important; }
+.bg-blue { background-color: #1E88E5 !important; }
+.bg-green { background-color: #43A047 !important; }
+.bg-yellow { background-color: #FDD835 !important; }
+.bg-purple { background-color: #8E24AA !important; }
+.bg-orange { background-color: #FB8C00 !important; }
+.bg-pink { background-color: #EC407A !important; }
 </style>

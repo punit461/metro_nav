@@ -7,6 +7,14 @@ const routes = [
     path: '/find-route',
     component: () => import('pages/FindRoutePage.vue')
   },
+  { 
+    path: '/route-details',
+    component: () => import('pages/RouteDetailsPage.vue')
+  },
+  {
+    path: '/list-stations',
+    component: () => import('pages/ListStationPage.vue')
+  },
   {
     path: '/tickets',
     component: () => import('pages/TicketsPage.vue')

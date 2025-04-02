@@ -1,0 +1,150 @@
+// Metro line colors
+.line-red {
+    background-color: #e74c3c !important;
+  }
+  
+  .line-blue {
+    background-color: #3498db !important;
+  }
+  
+  .line-green {
+    background-color: #2ecc71 !important;
+  }
+  
+  .line-purple {
+    background-color: #9b59b6 !important;
+  }
+  
+  .line-yellow {
+    background-color: #f1c40f !important;
+  }
+  
+  .line-orange {
+    background-color: #e67e22 !important;
+  }
+  
+  // Station status indicators
+  .station-normal {
+    color: #2ecc71 !important;
+  }
+  
+  .station-busy {
+    color: #f39c12 !important;
+  }
+  
+  .station-crowded {
+    color: #e74c3c !important;
+  }
+  
+  .station-closed {
+    color: #7f8c8d !important;
+  }
+  
+  // Route styling
+  .route-card {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .route-header {
+    padding: 20px;
+  }
+  
+  .route-summary {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    margin-bottom: 16px;
+  }
+  
+  .route-info-tile {
+    text-align: center;
+    padding: 12px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    margin: 4px;
+    flex: 1;
+  }
+  
+  .station-list {
+    padding: 12px 0;
+  }
+  
+  // Timeline styling
+  .station-timeline {
+    position: relative;
+    min-height: 60px;
+    display: flex;
+    padding-left: 30px;
+  }
+  
+  .timeline-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    width: 4px;
+  }
+  
+  .timeline-dot {
+    position: absolute;
+    left: 9px;
+    top: 20px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  .interchange-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #e74c3c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+  }
+  
+  // Platform badge
+  .platform-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 12px;
+    background-color: #f0f0f0;
+    font-size: 12px;
+    margin-left: 6px;
+  }
+  
+  // Animation
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.5s;
+  }
+  .fade-enter-from,
+  .fade-leave-to {
+    opacity: 0;
+  }
+  
+  // Responsive adjustments
+  @media (max-width: 599px) {
+    .route-info-tile {
+      padding: 8px 4px;
+      font-size: 0.9rem;
+    }
+    
+    .timeline-dot {
+      width: 12px;
+      height: 12px;
+      left: 11px;
+    }
+  }

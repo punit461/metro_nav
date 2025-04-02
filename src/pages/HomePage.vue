@@ -27,6 +27,12 @@ export default {
           icon: 'directions',
           route: '/find-route',
           color: 'bg-primary'
+        },
+        {
+          title: 'List Stations',
+          icon: 'map',
+          route: '/list-stations',
+          color: 'bg-secondary'
         }
         // {
         //   title: 'Tickets',
