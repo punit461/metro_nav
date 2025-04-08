@@ -83,7 +83,8 @@ export default {
         .map(station => ({
           id: station.id,
           name: station.name
-        })),
+        }))
+        .sort((a, b) => a.name.localeCompare(b.name)),
       graph: {}
     };
   },

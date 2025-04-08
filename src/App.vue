@@ -47,6 +47,33 @@ export const AppVue = `
               Find Route
             </q-item-section>
           </q-item>
+
+          <q-item clickable to="/metro-map">
+            <q-item-section avatar>
+              <q-icon name="map"/>
+            </q-item-section>
+            <q-item-section>
+              Metro Map
+            </q-item-section>
+          </q-item>
+
+          <q-item clickable to="/list-stations">
+            <q-item-section avatar>
+              <q-icon name="list"/>
+            </q-item-section>
+            <q-item-section>
+              List Stations
+            </q-item-section>
+          </q-item>
+
+          <q-item clickable to="/tickets">
+            <q-item-section avatar>
+              <q-icon name="receipt"/>
+            </q-item-section>
+            <q-item-section>
+              Tickets
+            </q-item-section>
+          </q-item>
           
           <!-- <q-item clickable to="/tickets">
             <q-item-section avatar>

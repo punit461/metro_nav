@@ -16,8 +16,16 @@ const routes = [
     component: () => import('pages/ListStationPage.vue')
   },
   {
+    path: '/metro-map',
+    component: () => import('pages/MetroMapPage.vue')
+  },
+  {
     path: '/tickets',
-    component: () => import('pages/TicketsPage.vue')
+    component: () => import('pages/TicketsPage.vue'),
+    beforeEnter: (to, from, next) => {
+      window.location.href = "https://api.whatsapp.com/send/?phone=918105556677&text=Hi";
+      next(false); // Prevent the actual navigation
+    }
   },
   {
     path: '/fare-calculator',

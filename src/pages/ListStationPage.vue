@@ -28,16 +28,16 @@
         <q-item-section>
         <div class="row items-center">
           <q-item-label>{{ station.name }}</q-item-label>
-          <q-item-label caption>
+          <q-item-label caption class="row items-center">
             <q-chip
               v-for="line in station.lines"
               :key="line.id"
               :style="{ backgroundColor: line }"
-              text-color="grey"
+              text-color="black" 
               size="sm"
               class="q-mr-xs"
             >
-              {{ line }}
+              {{ line.toUpperCase() }}
             </q-chip>
           </q-item-label>
         </div>
@@ -86,5 +86,12 @@ export default {
   justify-content: space-between;
   align-items: center;
   display: flex;
+}
+
+.color-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
 }
 </style>
