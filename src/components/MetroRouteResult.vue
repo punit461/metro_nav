@@ -81,8 +81,8 @@ export default defineComponent({
     },
     calculateTime(distance) {
       // Approximate travel time calculation - example logic
-      const avgSpeedKmPerMin = 0.5; // 30 km/h = 0.5 km/min
-      const baseTime = 2; // base time in minutes for each station stop
+      const avgSpeedKmPerMin = 0.6; // 30 km/h = 0.5 km/min
+      const baseTime = 0.7; // base time in minutes for each station stop
       const stationCount = this.result.path.length;
       return Math.round((distance / avgSpeedKmPerMin) + (baseTime * (stationCount - 1)));
     },
