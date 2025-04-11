@@ -21,15 +21,23 @@ const routes = [
   },
   {
     path: '/tickets',
-    component: () => import('pages/TicketsPage.vue'),
+    component: () => import('pages/HomePage.vue'),
     beforeEnter: (to, from, next) => {
       window.location.href = "https://api.whatsapp.com/send/?phone=918105556677&text=Hi";
       next(false); // Prevent the actual navigation
     }
   },
   {
+    path: '/favorites',
+    component: () => import('pages/Favorites.vue')
+  },
+  {
+    path: '/about',
+    component: () => import('pages/About.vue')
+  },
+  {
     path: '/fare-calculator',
-    component: () => import('pages/FareCalculatorPage.vue')
+    component: () => import('src/pages/About.vue')
   },
 
   // Always leave this as last one,

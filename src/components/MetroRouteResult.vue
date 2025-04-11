@@ -15,7 +15,7 @@
             </div>
             <div class="col-6 col-md-3 text-center">
               <div class="text-h6">₹{{ calculateFare(result.distance) }}</div>
-              <div class="text-caption">Fare</div>
+              <div class="text-caption">Est. Fare</div>
             </div>
             <div class="col-6 col-md-3 text-center">
               <div class="text-h6">{{ calculateTime(result.distance) }} min</div>
@@ -74,11 +74,16 @@ export default defineComponent({
   },
   methods: {
     calculateFare(distance) {
-      // Basic fare calculation - example logic
-      const baseFare = 10;
-      const perKmRate = 5;
-      return Math.round(baseFare + (distance * perKmRate));
-    },
+  if (distance <= 2) return 10;
+  else if (distance <= 4) return 20;
+  else if (distance <= 6) return 30;
+  else if (distance <= 8) return 40;
+  else if (distance <= 10) return 50;
+  else if (distance <= 15) return 60;
+  else if (distance <= 20) return 70;
+  else if (distance <= 25) return 80;
+  else return 90;
+},
     calculateTime(distance) {
       // Approximate travel time calculation - example logic
       const avgSpeedKmPerMin = 0.6; // 30 km/h = 0.5 km/min

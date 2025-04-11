@@ -46,25 +46,18 @@ export default {
           route: '/tickets',
           color: 'bg-positive'
         },
-        // {
-        //   title: 'Fare Calculator',
-        //   icon: 'calculate',
-        //   route: '/fare-calculator',
-        //   color: 'bg-accent'
-        // },
-        // ,
-        // {
-        //   title: 'Favorites',
-        //   icon: 'star',
-        //   route: '/favorites',
-        //   color: 'bg-negative'
-        // },
-        // {
-        //   title: 'Metro Info',
-        //   icon: 'info',
-        //   route: '/info',
-        //   color: 'bg-info'
-        // }
+        {
+          title: 'Favorites',
+          icon: 'star',
+          route: '/favorites',
+          color: 'bg-negative'
+        },
+        {
+          title: 'About',
+          icon: 'info',
+          route: '/about',
+          color: 'bg-info'
+        }
       ]
     }
   },

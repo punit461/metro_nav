@@ -75,23 +75,23 @@ export const AppVue = `
             </q-item-section>
           </q-item>
           
-          <!-- <q-item clickable to="/tickets">
+          <q-item clickable to="/favorites">
             <q-item-section avatar>
-              <q-icon name="receipt" />
+              <q-icon name="star" />
             </q-item-section>
             <q-item-section>
-              Tickets
+              Favorites
             </q-item-section>
           </q-item>
           
-          <q-item clickable to="/fare-calculator">
+          <q-item clickable to="/about">
             <q-item-section avatar>
-              <q-icon name="calculate" />
+              <q-icon name="info" />
             </q-item-section>
             <q-item-section>
-              Fare Calculator
+              About
             </q-item-section>
-          </q-item> -->
+          </q-item>
         </q-list>
       </q-drawer>
 
