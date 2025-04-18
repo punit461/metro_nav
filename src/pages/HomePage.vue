@@ -1,7 +1,7 @@
 export const HomePageVue = `
 <template>
   <q-page class="q-pa-md">
-    <h4 class="q-mb-md">Bangalore Metro</h4>
+    <h4 class="q-mb-md"></h4>
     
     <div class="row q-col-gutter-md">
       <div class="col-6 col-sm-4 col-md-3" v-for="(tile, index) in tiles" :key="index">
