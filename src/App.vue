@@ -14,7 +14,7 @@ export const AppVue = `
           />
 
           <q-toolbar-title>
-            Bangalore Metro Navigator
+            Namma Metro Navigation
           </q-toolbar-title>
         </q-toolbar>
       </q-header>
@@ -26,7 +26,7 @@ export const AppVue = `
         content-class="bg-grey-1"
       >
         <q-list>
-          <q-item-label header class="text-grey-8">Bangalore Metro Navigator</q-item-label>
+          <q-item-label header class="text-grey-8">Namma Metro Navigation</q-item-label>
           
           <q-item clickable to="/">
             <q-item-section avatar>
