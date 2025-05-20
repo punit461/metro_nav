@@ -9,7 +9,7 @@
       <q-card class="q-pa-md">
         <div class="text-center q-mb-lg">
           <q-icon name="directions_subway" color="primary" size="4rem" />
-          <h5 class="q-mt-md q-mb-xs">Metro Route Finder</h5>
+          <h5 class="q-mt-md q-mb-xs">Namma Metro Navigation</h5>
           <div class="text-subtitle1 text-grey-7">Version 1.0.0</div>
         </div>
   
@@ -18,8 +18,10 @@
         <div class="q-px-md">
           <h6>About This App</h6>
           <p>
-            Metro Route Finder helps you navigate the city's metro system with ease. Find the fastest routes between stations,
-            save your favorite journeys, and access real-time metro information whenever you need it.
+           Namma Metro Navigation helps you navigate the city's metro system with ease. 
+          </p>
+          <p>
+            Whether you're a daily commuter or a tourist, this app is your go-to guide for navigating the metro system.
           </p>
   
           <h6 class="q-mt-lg">Features</h6>
@@ -46,20 +48,28 @@
               <q-item-section avatar>
                 <q-icon color="primary" name="access_time" />
               </q-item-section>
-              <q-item-section>Get accurate travel time estimates</q-item-section>
+              <q-item-section>Get accurate travel time estimates (Fare, Time, InterChanges)</q-item-section>
             </q-item>
           </q-list>
   
           <h6 class="q-mt-lg">How to Use</h6>
           <p>
-            Simply enter your starting station and destination to find the optimal route. The app will calculate
-            the fastest path, including any necessary line changes. You can save your frequent routes or share
+            Press <b>Find Route</b> button to find the fastest route between two stations.
+          </p>
+          <p>
+            Enter your starting station and destination.
+          </p>
+          <p>
+            The app will calculate the fastest path, including any necessary line changes.
+          </p>
+          <p>
+            You can save your frequent routes or share
             them with others directly from the route details page.
           </p>
   
           <h6 class="q-mt-lg">Metro System Information</h6>
           <p>
-            This app covers all operational metro lines and stations in the city's transit system. Station
+            This app covers all operational metro lines and stations in the Bangalore city's Metro transit system. Station
             information and travel times are regularly updated to provide the most accurate journey planning.
           </p>
   
@@ -68,8 +78,9 @@
           <h6>About Developer</h6>
           <p class="q-mb-lg">
             Hi I'm Punit, I developed this App to ease finding metro route namma metro needed a navigator app which could tell you exact route details. 
-            I tried adding most relevant information, Hope it helps the user, hit me up on email for all your queries and feedback.
             
+          </p>Hope it helps the user, hit me up on email for all your queries and feedback.<p>
+
           </p>
 
           <q-separator class="q-my-lg" />
@@ -84,23 +95,25 @@
               <q-card flat bordered class="text-center q-pa-md">
                 <q-icon name="email" size="2rem" color="primary" />
                 <div class="text-subtitle1 q-mt-sm">Email Support</div>
-                <div class="text-grey-7">punit461bharadwaj@gmail.com</div>
+                <a href="mailto:punit461bharadwaj@gmail.com" style="text-decoration: none; color: inherit;">
+                  punit461bharadwaj@gmail.com
+                </a>
               </q-card>
             </div>
-            <div class="col-12 col-sm-6">
+            <!-- <div class="col-12 col-sm-6">
               <q-card flat bordered class="text-center q-pa-md">
                 <q-icon name="help" size="2rem" color="primary" />
                 <div class="text-subtitle1 q-mt-sm">Help Center</div>
                 <div class="text-grey-7">Visit our help center</div>
               </q-card>
-            </div>
+            </div> -->
           </div>
         </div>
   
         <q-separator class="q-my-lg" />
   
         <div class="text-center text-grey-7 text-caption">
-          <div>© {{ currentYear }} Metro Route Finder</div>
+          <div>© {{ currentYear }} Namma Metro Navigation</div>
           <div class="q-mt-xs">All rights reserved</div>
         </div>
       </q-card>
