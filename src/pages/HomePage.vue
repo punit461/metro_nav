@@ -35,19 +35,19 @@ export default {
           color: 'bg-secondary'
         },
         {
-          title: 'Metro Map',
+          title: 'View Metro Map',
           icon: 'map',
           route: '/metro-map',
           color: 'bg-accent'
         },
         {
-          title: 'Tickets',
+          title: 'Get Tickets',
           icon: 'receipt',
           route: '/tickets',
           color: 'bg-positive'
         },
         {
-          title: 'Favorites',
+          title: 'List Favorites',
           icon: 'star',
           route: '/favorites',
           color: 'bg-negative'

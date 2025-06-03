@@ -104,8 +104,8 @@
       
       goToRoute(favorite) {
         // Store from and to stations in localStorage to be used by find-route page
-        localStorage.setItem('lastFromStation', favorite.from);
-        localStorage.setItem('lastToStation', favorite.to);
+        localStorage.setItem('fromStationName', favorite.from);
+        localStorage.setItem('toStationName', favorite.to);
         
         // Navigate to find route page which will use these values
         this.$router.push('/find-route');

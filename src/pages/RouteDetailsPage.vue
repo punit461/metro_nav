@@ -107,50 +107,45 @@ export default {
       return totalDistance.toFixed(1);
     },
     shareRoute() {
-      if (!this.routeResult) return;
-      
-      // Extract source and destination using the same logic
-      let fromStation = '';
-      let toStation = '';
-      
-      if (this.routeResult.source && this.routeResult.destination) {
-        fromStation = this.routeResult.source;
-        toStation = this.routeResult.destination;
-      } else if (this.routeResult.from && this.routeResult.to) {
-        fromStation = this.routeResult.from;
-        toStation = this.routeResult.to;
-      } else if (this.routeResult.steps && this.routeResult.steps.length > 0) {
-        const firstStep = this.routeResult.steps[0];
-        const lastStep = this.routeResult.steps[this.routeResult.steps.length - 1];
-        
-        if (firstStep && firstStep.from) {
-          fromStation = firstStep.from;
-        }
-        
-        if (lastStep && lastStep.to) {
-          toStation = lastStep.to;
-        }
+      if (!this.routeResult) {
+        this.$q.notify({
+          color: 'negative',
+          message: 'No route details available to share',
+          icon: 'error'
+        });
+        return;
       }
       
       // Create a text representation of the route
-      let routeText = `Metro Route: ${fromStation || 'Origin'} to ${toStation || 'Destination'}\n\n`;
+      let routeText = '';
       
-      // Add total time and distance with null checks
-      const totalTime = this.routeResult.totalTime || this.calculateTotalTime();
-      const totalDistance = this.routeResult.totalDistance || this.calculateTotalDistance();
+      // Add route header with path information
+      if (this.routeResult.path && Array.isArray(this.routeResult.path)) {
+        const fromStation = this.routeResult.path[0];
+        const toStation = this.routeResult.path[this.routeResult.path.length - 1];
+        routeText += `Metro Route: ${fromStation || 'Origin'} to ${toStation || 'Destination'}\n\n`;
+      } else {
+        routeText += 'Metro Route Details\n\n';
+      }
       
-      routeText += `Total Journey: ${totalTime} minutes (${totalDistance} km)\n\n`;
+      // Add distance and estimated time
+      if (this.routeResult.distance) {
+        routeText += `Total Distance: ${this.routeResult.distance.toFixed(1)} km\n`;
+        // Estimate time (assuming 2 minutes per km)
+        const estimatedTime = Math.ceil(this.routeResult.distance * 2);
+        routeText += `Estimated Time: ${estimatedTime} minutes\n\n`;
+      }
       
-      // Add route details
-      routeText += "Journey Details:\n";
-      
-      this.routeResult.steps.forEach((step, index) => {
-        if (step.type === 'travel') {
-          routeText += `${index + 1}. Take ${step.line} line from ${step.from} to ${step.to} (${step.stations.length - 1} stations, ${step.time} mins)\n`;
-        } else if (step.type === 'interchange') {
-          routeText += `${index + 1}. Change from ${step.fromLine} to ${step.toLine} at ${step.station} (${step.time} mins)\n`;
-        }
-      });
+      // Add path details
+      if (this.routeResult.path && Array.isArray(this.routeResult.path)) {
+        routeText += "Journey Details:\n";
+        this.routeResult.path.forEach((station, index) => {
+          if (index < this.routeResult.path.length - 1) {
+            const currentLine = this.routeResult.lines[index];
+            routeText += `${index + 1}. ${station} → ${this.routeResult.path[index + 1]} (${currentLine} Line)\n`;
+          }
+        });
+      }
       
       // Use Web Share API if available
       if (navigator.share) {
@@ -158,7 +153,7 @@ export default {
           title: 'Metro Route Details',
           text: routeText
         }).catch((error) => {
-          console.log(error)
+          console.error('Share failed:', error);
           this.fallbackShare(routeText);
         });
       } else {
@@ -200,73 +195,34 @@ export default {
     },
     
     saveToFavorites() {
-      if (!this.routeResult) return;
+      if (!this.routeResult || !this.routeResult.path) return;
       
-      // Set default name for the route - check the structure of routeResult to access the correct properties
-      let fromStation = '';
-      let toStation = '';
+      const fromStation = this.routeResult.path[0];
+      const toStation = this.routeResult.path[this.routeResult.path.length - 1];
       
-      // Check various possible structures to find the station names
-      if (this.routeResult.source && this.routeResult.destination) {
-        fromStation = this.routeResult.source;
-        toStation = this.routeResult.destination;
-      } else if (this.routeResult.from && this.routeResult.to) {
-        fromStation = this.routeResult.from;
-        toStation = this.routeResult.to;
-      } else if (this.routeResult.steps && this.routeResult.steps.length > 0) {
-        // Try to extract from first and last steps
-        const firstStep = this.routeResult.steps[0];
-        const lastStep = this.routeResult.steps[this.routeResult.steps.length - 1];
-        
-        if (firstStep && firstStep.from) {
-          fromStation = firstStep.from;
-        }
-        
-        if (lastStep && lastStep.to) {
-          toStation = lastStep.to;
-        }
-      }
-      
-      // Set the name with fallbacks
-      this.favoriteName = `${fromStation || 'Origin'} to ${toStation || 'Destination'}`;
+      // Set the name with actual station names
+      this.favoriteName = `${fromStation} to ${toStation}`;
       
       // Open dialog to confirm and name the favorite
       this.favoriteDialog = true;
     },
     
     confirmSaveToFavorites() {
-      if (!this.routeResult || !this.favoriteName.trim()) return;
+      if (!this.routeResult || !this.favoriteName.trim() || !this.routeResult.path) return;
       
-      // Extract from and to stations using the same logic as in saveToFavorites
-      let fromStation = '';
-      let toStation = '';
+      const fromStation = this.routeResult.path[0];
+      const toStation = this.routeResult.path[this.routeResult.path.length - 1];
       
-      if (this.routeResult.source && this.routeResult.destination) {
-        fromStation = this.routeResult.source;
-        toStation = this.routeResult.destination;
-      } else if (this.routeResult.from && this.routeResult.to) {
-        fromStation = this.routeResult.from;
-        toStation = this.routeResult.to;
-      } else if (this.routeResult.steps && this.routeResult.steps.length > 0) {
-        const firstStep = this.routeResult.steps[0];
-        const lastStep = this.routeResult.steps[this.routeResult.steps.length - 1];
-        
-        if (firstStep && firstStep.from) {
-          fromStation = firstStep.from;
-        }
-        
-        if (lastStep && lastStep.to) {
-          toStation = lastStep.to;
-        }
-      }
-      
-      // Create favorite route object with fallbacks
+      // Create favorite route object
       const favoriteRoute = {
-        id: Date.now().toString(), // Generate a unique ID
+        id: Date.now().toString(),
         name: this.favoriteName.trim(),
-        from: fromStation || 'Origin',
-        to: toStation || 'Destination',
-        savedAt: new Date().toISOString()
+        from: fromStation,
+        to: toStation,
+        savedAt: new Date().toISOString(),
+        distance: this.routeResult.distance,
+        path: this.routeResult.path,
+        lines: this.routeResult.lines
       };
       
       // Get existing favorites or initialize empty array

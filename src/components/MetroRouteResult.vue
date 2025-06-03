@@ -101,14 +101,27 @@ export default defineComponent({
       return interchanges;
     },
     isInterchange(index) {
-      if (index < this.result.path.length - 1) {
-        const currentStation = this.getStationByName(this.result.path[index]);
-        const nextStation = this.getStationByName(this.result.path[index + 1]);
-        // Check if they are on different lines
-        return this.getLineInfo(currentStation.name).id !== this.getLineInfo(nextStation.name).id;
-      }
-      return false;
-    },
+  if (index < this.result.path.length - 1) {
+    const currentStation = this.getStationByName(this.result.path[index]);
+    const nextStation = this.getStationByName(this.result.path[index + 1]);
+    
+    // First check if current station has multiple lines
+    if (currentStation.lines && currentStation.lines.length > 1) {
+      // Find the line that connects current and previous station
+      const prevStation = index > 0 ? this.getStationByName(this.result.path[index - 1]) : null;
+      const currentLine = prevStation ? 
+        currentStation.lines.find(line => prevStation.lines.includes(line)) :
+        currentStation.lines[0];
+
+      // Find the line that connects current and next station
+      const nextLine = currentStation.lines.find(line => nextStation.lines.includes(line));
+
+      // It's an interchange only if we need to change lines
+      return currentLine !== nextLine;
+    }
+  }
+  return false;
+},
     getStationByName(name) {
       return metroData.stations.find(station => station.name === name) || {};
     },
@@ -118,10 +131,20 @@ export default defineComponent({
       const line = metroData.lines ? metroData.lines.find(line => line.id === lineId) : { id: 'unknown', name: 'Unknown Line', color: 'grey' };
       return line || { id: 'unknown', name: 'Unknown Line', color: 'grey' };
     },
-    getLineColor(stationName) {
-      const line = this.getLineInfo(stationName);
-      return `bg-${line.id || 'primary'}`;
-    },
+    getLineColor(stationName, index) {
+  const station = this.getStationByName(stationName);
+  // If we're at an interchange station, use the next station's line for the outgoing route
+  if (this.isInterchange(index) && index < this.result.path.length - 1) {
+    const nextStation = this.getStationByName(this.result.path[index + 1]);
+    // Find the common line between current and next station
+    const commonLine = station.lines.find(line => nextStation.lines.includes(line));
+    if (commonLine) {
+      return `bg-${commonLine}`;
+    }
+  }
+  // Default to first line if not an interchange or last station
+  return `bg-${station.lines[0] || 'primary'}`;
+},
     getPlatform(stationName) {
       const station = this.getStationByName(stationName);
       return station.platform || Math.floor(Math.random() * 4) + 1; // Random platform if not specified
