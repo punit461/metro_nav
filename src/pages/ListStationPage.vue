@@ -3,38 +3,20 @@
     <h4 class="q-mb-md">Metro Stations</h4>
 
     <div class="q-pa-md">
-      <q-input
-        v-model="searchQuery"
-        label="Search stations"
-        outlined
-        dense
-        clearable
-        class="q-ma-md"
-      >
+      <q-input v-model="searchQuery" label="Search stations" outlined dense clearable class="q-ma-md">
         <template v-slot:append>
           <q-icon name="search" /> </template>
       </q-input>
     </div>
 
     <q-list separator>
-      <q-item
-        v-for="station in filteredStations"
-        :key="station.id"
-        v-ripple
-        clickable 
-        @click="selectStation(station)"
-      >
+      <q-item v-for="station in filteredStations" :key="station.id" v-ripple clickable @click="selectStation(station)">
         <q-item-section>
           <div class="row items-center">
             <q-item-label>{{ station.name }}</q-item-label> <q-item-label caption class="row items-center">
-              <q-chip
-                v-for="lineId in station.lines"
-                :key="lineId"
-                :style="{ backgroundColor: getLineColor(lineId) }"
-                text-color="white" 
-                size="sm"
-                class="q-mr-xs"
-              >
+              <q-chip v-for="lineId in station.lines" :key="lineId"
+                :style="{ backgroundColor: getLineColor(lineId) === 'yellow' ? '#ffb300' : getLineColor(lineId) }"
+                text-color="white" size="sm" class="q-mr-xs">
                 {{ getLineName(lineId) }}
               </q-chip>
             </q-item-label>
@@ -56,7 +38,7 @@ export default {
     const router = useRouter();
     const route = useRoute();
     const searchQuery = ref('');
-    
+
     // Read the 'selectingFor' query parameter passed from FindRoutePage
     const selectingForField = ref(route.query.selectingFor);
 
@@ -87,17 +69,17 @@ export default {
     });
 
     const getLineData = (lineId) => {
-        return metroData.lines.find(line => line.id === lineId);
+      return metroData.lines.find(line => line.id === lineId);
     }
 
     const getLineColor = (lineId) => {
-        const line = getLineData(lineId);
-        return line ? line.id : '#757575'; // Default color
+      const line = getLineData(lineId);
+      return line ? line.id : '#757575'; // Default color
     };
 
     const getLineName = (lineId) => {
-        const line = getLineData(lineId);
-        return line ? line.name.toUpperCase() : 'N/A';
+      const line = getLineData(lineId);
+      return line ? line.name.toUpperCase() : 'N/A';
     };
 
     const selectStation = (station) => {
@@ -128,7 +110,7 @@ export default {
 
 .row {
   margin: 0;
-  
+
   justify-content: space-between;
   align-items: center;
   display: flex;

@@ -2,7 +2,7 @@ export const HomePageVue = `
 <template>
   <q-page class="q-pa-md">
     <h4 class="q-mb-md"></h4>
-    
+
     <div class="row q-col-gutter-md">
       <div class="col-6 col-sm-4 col-md-3" v-for="(tile, index) in tiles" :key="index">
         <q-card class="metro-tile" :class="tile.color" @click="navigateTo(tile.route)">
@@ -47,6 +47,12 @@ export default {
           color: 'bg-positive'
         },
         {
+          title: 'Nearest Stations',
+          icon: 'my_location',
+          route: '/nearest-stations',
+          color: 'bg-positive'
+        },
+        {
           title: 'List Favorites',
           icon: 'star',
           route: '/favorites',
@@ -74,7 +80,7 @@ export default {
   height: 140px;
   cursor: pointer;
   transition: transform 0.3s;
-  
+
   &:hover {
     transform: translateY(-5px);
   }
