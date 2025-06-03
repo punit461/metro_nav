@@ -12,20 +12,26 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "channasandra_hopefarm",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -45,25 +51,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "whitefield_kadugodi",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "kadugodi_tree_park",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -83,25 +97,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "channasandra_hopefarm",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "pattandur_agrahara",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -121,25 +143,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "kadugodi_tree_park",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "sri_sathya_sai_hospital",
           "distance": 2.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -159,25 +189,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "pattandur_agrahara",
           "distance": 2.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "nallurhalli",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -197,25 +235,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "sri_sathya_sai_hospital",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "kundalahalli",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -235,25 +281,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "nallurhalli",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "seetharam_palya",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -273,25 +327,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "kundalahalli",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "hoodi",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -311,25 +373,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "seetharam_palya",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "garudacharpalya",
           "distance": 2.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -349,25 +419,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "hoodi",
           "distance": 2.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "singayyanapalya",
           "distance": 1.5,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -387,25 +465,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "garudacharpalya",
           "distance": 1.5,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "kr_pura",
           "distance": 1.6,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -426,47 +512,63 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Challahalli",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kengeri",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p3",
           "name": "Platform 3",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p4",
           "name": "Platform 4",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "singayyanapalya",
           "distance": 1.6,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "benniganahalli",
           "distance": 1.2,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "kasturinagar",
           "distance": 3.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "mahadevapura",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -486,25 +588,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "kr_pura",
           "distance": 1.2,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "baiyappanahalli",
           "distance": 1.5,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -524,25 +634,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "benniganahalli",
           "distance": 1.5,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "swami_vivekananda_road",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -562,25 +680,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "baiyappanahalli",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "indiranagar",
           "distance": 1.5,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -600,25 +726,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "swami_vivekananda_road",
           "distance": 1.5,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "halasuru",
           "distance": 1.5,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -638,25 +772,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "indiranagar",
           "distance": 1.5,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "trinity",
           "distance": 1.5,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -676,25 +818,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "halasuru",
           "distance": 1.5,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "mg_road",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -715,47 +865,63 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Challahalli",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kengeri",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p3",
           "name": "Platform 3",
           "direction": "Towards Kalena Agrahara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p4",
           "name": "Platform 4",
           "direction": "Towards Nagawara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "trinity",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "cubbon_park",
           "distance": 1.5,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "shivajinagar",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "rastriya_military_school",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -775,25 +941,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "mg_road",
           "distance": 1.5,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "vidhana_soudha",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -813,25 +987,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "cubbon_park",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "central_college",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -851,25 +1033,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "vidhana_soudha",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "kempegowda_stn_majestic",
           "distance": 1.5,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -890,47 +1080,63 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Challahalli",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kengeri",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p3",
           "name": "Platform 3",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p4",
           "name": "Platform 4",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "central_college",
           "distance": 1.5,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "ksr_bangalore_railway_stn",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "chickpete",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "sampige_road",
           "distance": 3.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -950,25 +1156,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "kempegowda_stn_majestic",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "magadi_road",
           "distance": 1.5,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -988,25 +1202,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "ksr_bangalore_railway_stn",
           "distance": 1.5,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "hosahalli",
           "distance": 1.5,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1026,25 +1248,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "magadi_road",
           "distance": 1.5,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "vijayanagar",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1064,25 +1294,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "hosahalli",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "attiguppe",
           "distance": 2.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1102,25 +1340,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "vijayanagar",
           "distance": 2.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "deepanjali_nagar",
           "distance": 1.2,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1140,25 +1386,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "attiguppe",
           "distance": 1.2,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "mysuru_road",
           "distance": 1.2,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1178,25 +1432,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "deepanjali_nagar",
           "distance": 1.2,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "nayandahalli",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1216,25 +1478,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "mysuru_road",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "rajarajeshwari_nagar",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1254,25 +1524,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "nayandahalli",
           "distance": 1.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "jnanabharathi",
           "distance": 2.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1292,25 +1570,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "rajarajeshwari_nagar",
           "distance": 2.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "pattanagere",
           "distance": 2.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1330,25 +1616,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "jnanabharathi",
           "distance": 2.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "kengeri_bus_terminal",
           "distance": 1.5,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1368,25 +1662,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "pattanagere",
           "distance": 1.5,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "kengeri",
           "distance": 2.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1406,25 +1708,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "kengeri_bus_terminal",
           "distance": 2.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "challaghatta",
           "distance": 2.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1444,20 +1754,26 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Whitefield",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Challaghatta",
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "kengeri",
           "distance": 2.0,
-          "line": "purple"
+          "line": "purple",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1477,20 +1793,26 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "thalaghattapura",
           "distance": 1.5,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1510,25 +1832,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "silk_institute",
           "distance": 1.5,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "vajarahalli",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1548,25 +1878,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "thalaghattapura",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "doddakallasandra",
           "distance": 1.3,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1586,25 +1924,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "vajarahalli",
           "distance": 1.3,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "konanakunte_cross",
           "distance": 1.2,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1624,25 +1970,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "doddakallasandra",
           "distance": 1.2,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "yelachenahalli",
           "distance": 1.1,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1662,25 +2016,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "konanakunte_cross",
           "distance": 1.1,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "jayaprakash_nagar",
           "distance": 1.4,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1700,25 +2062,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "yelachenahalli",
           "distance": 1.4,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "banashankari",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1738,25 +2108,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "jayaprakash_nagar",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "rashtreeya_vidyalaya_road",
           "distance": 1.5,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1777,42 +2155,56 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards RV Road",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Bommasansdra",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p3",
           "name": "Platform 3",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p4",
           "name": "Platform 4",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "banashankari",
           "distance": 1.5,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "jayanagar",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "ragigudda",
           "distance": 1.5,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1832,25 +2224,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "rashtreeya_vidyalaya_road",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "south_end_circle",
           "distance": 1.1,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1870,25 +2270,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "jayanagar",
           "distance": 1.1,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "lalbagh",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1908,25 +2316,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "south_end_circle",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "national_college",
           "distance": 1.1,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1946,25 +2362,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "lalbagh",
           "distance": 1.1,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "krishna_rajendra_market",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -1984,25 +2408,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "national_college",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "chickpete",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2022,25 +2454,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "krishna_rajendra_market",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "kempegowda_stn_majestic",
           "distance": 1.4,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2060,25 +2500,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "kempegowda_stn_majestic",
           "distance": 1.7,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "srirampura",
           "distance": 1.5,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2098,25 +2546,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "sampige_road",
           "distance": 1.5,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "kuvempu_road",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2136,25 +2592,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "srirampura",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "rajajinagar",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2174,25 +2638,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "kuvempu_road",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "mahalakshmi",
           "distance": 1.1,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2212,25 +2684,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "rajajinagar",
           "distance": 1.1,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "sandal_soap_factory",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2250,25 +2730,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "mahalakshmi",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "yeshwantpur",
           "distance": 1.1,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2288,25 +2776,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "sandal_soap_factory",
           "distance": 1.1,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "goraguntepalya",
           "distance": 1.2,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2326,25 +2822,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "yeshwantpur",
           "distance": 1.2,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "peenya",
           "distance": 1.7,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2364,25 +2868,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "goraguntepalya",
           "distance": 1.7,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "peenya_industry",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2402,25 +2914,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "peenya",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "jalahalli",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2440,25 +2960,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "peenya_industry",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "dasarahalli",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2478,25 +3006,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "jalahalli",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "nagasandra",
           "distance": 1.6,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2516,25 +3052,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "dasarahalli",
           "distance": 1.6,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "manjunatha_nagar",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2554,25 +3098,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "nagasandra",
           "distance": 1.0,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "chikkabidarakallu",
           "distance": 0.7,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2592,25 +3144,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "manjunatha_nagar",
           "distance": 0.7,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "madavara",
           "distance": 1.5,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2630,20 +3190,26 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Silk Institute",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Madavara",
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "chikkabidarakallu",
           "distance": 1.5,
-          "line": "green"
+          "line": "green",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2663,20 +3229,26 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards RV Road",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Bommasansdra",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "hebbagodi",
           "distance": 1.4,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2696,25 +3268,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards RV Road",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Bommasansdra",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "bommasandra",
           "distance": 1.4,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "huskur_road",
           "distance": 1.2,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2734,25 +3314,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards RV Road",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Bommasansdra",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "hebbagodi",
           "distance": 1.2,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "konnapana_agrahara",
           "distance": 2.4,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2772,25 +3360,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards RV Road",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Bommasansdra",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "huskur_road",
           "distance": 2.4,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "electronic_city",
           "distance": 2.0,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2810,25 +3406,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards RV Road",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Bommasansdra",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "konnapana_agrahara",
           "distance": 2.0,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "beratena_agrahara",
           "distance": 1.1,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2848,25 +3452,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards RV Road",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Bommasansdra",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "electronic_city",
           "distance": 1.1,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "hosa_road",
           "distance": 1.0,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2886,25 +3498,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards RV Road",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Bommasansdra",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "beratena_agrahara",
           "distance": 1.0,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "singasandra",
           "distance": 1.4,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2924,25 +3544,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards RV Road",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Bommasansdra",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "hosa_road",
           "distance": 1.4,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "kudlu_gate",
           "distance": 1.2,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -2962,25 +3590,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards RV Road",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Bommasansdra",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "singasandra",
           "distance": 1.2,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "hongasandra",
           "distance": 1.5,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3000,25 +3636,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards RV Road",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Bommasansdra",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "kudlu_gate",
           "distance": 1.5,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "bommanahalli",
           "distance": 1.2,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3038,25 +3682,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards RV Road",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Bommasansdra",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "hongasandra",
           "distance": 1.2,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "central_silk_board",
           "distance": 1.0,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3077,42 +3729,56 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards RV Road",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Bommasansdra",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p3",
           "name": "Platform 3",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p4",
           "name": "Platform 4",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "bommanahalli",
           "distance": 1.0,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "btm_layout",
           "distance": 1.6,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "hsr_layout",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3132,25 +3798,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards RV Road",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Bommasansdra",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "central_silk_board",
           "distance": 1.6,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "jayadeva_hospital",
           "distance": 1.0,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3171,47 +3845,63 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards RV Road",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Bommasansdra",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p3",
           "name": "Platform 3",
           "direction": "Towards Nagawara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p4",
           "name": "Platform 4",
           "direction": "Towards Kalena Agrahara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "btm_layout",
           "distance": 1.0,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "ragigudda",
           "distance": 1.3,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "tavarekere",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "jp_nagar_4th_phase",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3231,25 +3921,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards RV Road",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Bommasansdra",
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "jayadeva_hospital",
           "distance": 1.3,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "rashtreeya_vidyalaya_road",
           "distance": 1.4,
-          "line": "yellow"
+          "line": "yellow",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3269,20 +3967,26 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Nagawara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kalena Agrahara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "hulimavi",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3302,25 +4006,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Nagawara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kalena Agrahara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "kalena_agrahara",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "iim_bangalore",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3340,25 +4052,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Nagawara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kalena Agrahara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "hulimavi",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "jp_nagar_4th_phase",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3378,25 +4098,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Nagawara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kalena Agrahara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "iim_bangalore",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "jayadeva_hospital",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3416,25 +4144,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Nagawara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kalena Agrahara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "jayadeva_hospital",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "dairy_circle",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3454,25 +4190,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Nagawara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kalena Agrahara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "tavarekere",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "lakkasandra",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3492,25 +4236,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Nagawara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kalena Agrahara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "dairy_circle",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "langford_town",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3530,25 +4282,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Nagawara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kalena Agrahara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "lakkasandra",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "rashtriya_military_school",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3568,25 +4328,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Nagawara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kalena Agrahara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "langford_town",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "mg_road",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3606,25 +4374,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Nagawara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kalena Agrahara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "mg_road",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "cantonment",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3644,25 +4420,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Nagawara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kalena Agrahara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "shivajinagar",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "pottery_town",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3682,25 +4466,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Nagawara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kalena Agrahara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "cantonment",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "tannery_road",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3720,25 +4512,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Nagawara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kalena Agrahara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "pottery_town",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "venkateshpura",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3758,25 +4558,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Nagawara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kalena Agrahara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "tannery_road",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "kadugundanahalli",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3796,25 +4604,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Nagawara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kalena Agrahara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "venkateshpura",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "nagawara",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3835,42 +4651,56 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Nagawara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kalena Agrahara",
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p3",
           "name": "Platform 3",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p4",
           "name": "Platform 4",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "kadugundanahalli",
           "distance": 2.0,
-          "line": "pink"
+          "line": "pink",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "veerannapalya",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "hbr_layout",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3890,25 +4720,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "central_silk_board",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "agara_lake",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3928,25 +4766,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "hsr_layout",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "iblur",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -3966,25 +4812,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "agara_lake",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "bellandur",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -4004,25 +4858,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "iblur",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "devarabeesanahalli",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -4042,25 +4904,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "bellandur",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "kadubeesanahalli",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -4080,25 +4950,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "devarabeesanahalli",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "marathahalli",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -4118,25 +4996,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "kadubeesanahalli",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "isro_karthik_nagar",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -4156,25 +5042,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "marathahalli",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "doddanekundi",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -4194,25 +5088,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "isro_karthik_nagar",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "drdo_sports_complex",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -4232,25 +5134,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "doddanekundi",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "mahadevapura",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -4270,25 +5180,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "drdo_sports_complex",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "kr_pura",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -4308,25 +5226,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "kr_pura",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "horamavu",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -4346,25 +5272,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "kasturinagar",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "hrbr_layout",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -4384,25 +5318,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "horamavu",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "kalyan_nagar",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -4422,25 +5364,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "hrbr_layout",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "hbr_layout",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -4460,25 +5410,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "kalyan_nagar",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "nagawara",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -4498,25 +5456,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "nagawara",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "kempapura",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -4536,25 +5502,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "veerannapalya",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "hebbal",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -4574,25 +5548,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "kempapura",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "kodigehalli",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -4612,25 +5594,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "hebbal",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "jakkur_cross",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -4650,25 +5640,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "kodigehalli",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "yelahanka",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -4688,25 +5686,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "jakkur_cross",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "bagalur_cross",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -4726,25 +5732,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "yelahanka",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "bettahalasuru",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -4764,25 +5778,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "bagalur_cross",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "doddajala",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -4802,25 +5824,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "bettahalasuru",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "airport_city",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -4840,25 +5870,33 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "doddajala",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "to": "airport_terminal",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
@@ -4878,20 +5916,26 @@
           "platform_id": "p1",
           "name": "Platform 1",
           "direction": "Towards Central Silk Board",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
           "direction": "Towards Kempegowda International Airport",
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "connections": [
         {
           "to": "airport_city",
           "distance": 2.0,
-          "line": "blue"
+          "line": "blue",
+          "from_platform": "p2",
+          "to_platform": "p1"
         }
       ],
       "coordinates": {
