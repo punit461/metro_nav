@@ -1,6 +1,9 @@
 <template>
   <div class="nearest-stations">
-    <div class="text-h6 q-mb-md">Nearest Stations</div>
+
+    <q-card-section>
+      <div class="text-h6">Nearest Stations</div>
+    </q-card-section>
 
     <div v-if="loading" class="text-center">
       <q-spinner-dots color="primary" size="40px" />
@@ -84,8 +87,12 @@ export default {
     };
 
     const navigate = (station) => {
-      // You can implement navigation to the station here
-      console.log('Navigate to station:', station);
+      if (!station || !station.coordinates.lat || !station.coordinates.lng) {
+        console.error('Station coordinates not available');
+        return;
+      }
+      const url = `https://www.google.com/maps/dir/?api=1&destination=${station.coordinates.lat},${station.coordinates.lng}`;
+      window.open(url, '_blank');
     };
 
     onMounted(() => {
