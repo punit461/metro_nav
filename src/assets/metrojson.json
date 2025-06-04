@@ -425,13 +425,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Challahalli",
+          "direction": "Towards Whitefield",
           "line": "purple"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Kengeri",
+          "direction": "Towards Challaghatta",
           "line": "purple"
         },
         {
@@ -714,13 +714,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Challahalli",
+          "direction": "Towards Whitefield",
           "line": "purple"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Kengeri",
+          "direction": "Towards Challaghatta",
           "line": "purple"
         },
         {
@@ -889,25 +889,25 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Challahalli",
+          "direction": "Towards Whitefield",
           "line": "purple"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Kengeri",
+          "direction": "Towards Challaghatta",
           "line": "purple"
         },
         {
           "platform_id": "p3",
           "name": "Platform 3",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p4",
           "name": "Platform 4",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -1476,13 +1476,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -1509,13 +1509,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -1547,13 +1547,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -1585,13 +1585,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -1623,13 +1623,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -1661,13 +1661,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -1699,13 +1699,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -1737,13 +1737,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -1776,25 +1776,25 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards RV Road",
+          "direction": "Towards Madavara",
           "line": "yellow"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Bommasansdra",
+          "direction": "Towards Silk Institute",
           "line": "yellow"
         },
         {
           "platform_id": "p3",
           "name": "Platform 3",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards RV Road",
           "line": "green"
         },
         {
           "platform_id": "p4",
           "name": "Platform 4",
-          "direction": "Towards Madavara",
+          "direction": "Towards Bommasansdra",
           "line": "green"
         }
       ],
@@ -1831,13 +1831,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -1869,13 +1869,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -1907,13 +1907,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -1945,13 +1945,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -1983,13 +1983,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -2021,13 +2021,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -2059,13 +2059,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -2097,13 +2097,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -2135,13 +2135,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -2173,13 +2173,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -2211,13 +2211,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -2249,13 +2249,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -2287,13 +2287,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -2325,13 +2325,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -2363,13 +2363,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -2401,13 +2401,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -2439,13 +2439,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -2477,13 +2477,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -2515,13 +2515,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -2553,13 +2553,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -2591,13 +2591,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],
@@ -2629,13 +2629,13 @@
         {
           "platform_id": "p1",
           "name": "Platform 1",
-          "direction": "Towards Silk Institute",
+          "direction": "Towards Madavara",
           "line": "green"
         },
         {
           "platform_id": "p2",
           "name": "Platform 2",
-          "direction": "Towards Madavara",
+          "direction": "Towards Silk Institute",
           "line": "green"
         }
       ],

@@ -50,13 +50,13 @@ export default {
           title: 'Nearest Stations',
           icon: 'my_location',
           route: '/nearest-stations',
-          color: 'bg-positive'
+          color: 'bg-negative'
         },
         {
           title: 'List Favorites',
           icon: 'star',
           route: '/favorites',
-          color: 'bg-negative'
+          color: 'bg-warning'
         },
         {
           title: 'About',

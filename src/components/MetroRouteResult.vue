@@ -47,7 +47,8 @@
                 Platform {{ getPlatform(station) }} • {{ getLineInfo(station).name }}
               </span>
               <span v-else-if="isInterchange(index)" class="platform-info">
-                Change to Platform {{ getPlatform(result.path[index + 1]) }} • {{ getLineInfo(result.path[index + 1]).name }}
+                Change to Platform {{ getPlatform(result.path[index + 1]) }} • {{ getLineInfo(result.path[index +
+                  1]).name }}
               </span>
               <span v-else class="platform-info">
                 Platform {{ getPlatform(station) }} • {{ getLineInfo(station).name }}
@@ -74,16 +75,16 @@ export default defineComponent({
   },
   methods: {
     calculateFare(distance) {
-  if (distance <= 2) return 10;
-  else if (distance <= 4) return 20;
-  else if (distance <= 6) return 30;
-  else if (distance <= 8) return 40;
-  else if (distance <= 10) return 50;
-  else if (distance <= 15) return 60;
-  else if (distance <= 20) return 70;
-  else if (distance <= 25) return 80;
-  else return 90;
-},
+      if (distance <= 2) return 10;
+      else if (distance <= 4) return 20;
+      else if (distance <= 6) return 30;
+      else if (distance <= 8) return 40;
+      else if (distance <= 10) return 50;
+      else if (distance <= 15) return 60;
+      else if (distance <= 20) return 70;
+      else if (distance <= 25) return 80;
+      else return 90;
+    },
     calculateTime(distance) {
       // Approximate travel time calculation - example logic
       const avgSpeedKmPerMin = 0.6; // 30 km/h = 0.5 km/min
@@ -101,27 +102,27 @@ export default defineComponent({
       return interchanges;
     },
     isInterchange(index) {
-  if (index < this.result.path.length - 1) {
-    const currentStation = this.getStationByName(this.result.path[index]);
-    const nextStation = this.getStationByName(this.result.path[index + 1]);
-    
-    // First check if current station has multiple lines
-    if (currentStation.lines && currentStation.lines.length > 1) {
-      // Find the line that connects current and previous station
-      const prevStation = index > 0 ? this.getStationByName(this.result.path[index - 1]) : null;
-      const currentLine = prevStation ? 
-        currentStation.lines.find(line => prevStation.lines.includes(line)) :
-        currentStation.lines[0];
+      if (index < this.result.path.length - 1) {
+        const currentStation = this.getStationByName(this.result.path[index]);
+        const nextStation = this.getStationByName(this.result.path[index + 1]);
 
-      // Find the line that connects current and next station
-      const nextLine = currentStation.lines.find(line => nextStation.lines.includes(line));
+        // First check if current station has multiple lines
+        if (currentStation.lines && currentStation.lines.length > 1) {
+          // Find the line that connects current and previous station
+          const prevStation = index > 0 ? this.getStationByName(this.result.path[index - 1]) : null;
+          const currentLine = prevStation ?
+            currentStation.lines.find(line => prevStation.lines.includes(line)) :
+            currentStation.lines[0];
 
-      // It's an interchange only if we need to change lines
-      return currentLine !== nextLine;
-    }
-  }
-  return false;
-},
+          // Find the line that connects current and next station
+          const nextLine = currentStation.lines.find(line => nextStation.lines.includes(line));
+
+          // It's an interchange only if we need to change lines
+          return currentLine !== nextLine;
+        }
+      }
+      return false;
+    },
     getStationByName(name) {
       return metroData.stations.find(station => station.name === name) || {};
     },
@@ -132,22 +133,145 @@ export default defineComponent({
       return line || { id: 'unknown', name: 'Unknown Line', color: 'grey' };
     },
     getLineColor(stationName, index) {
-  const station = this.getStationByName(stationName);
-  // If we're at an interchange station, use the next station's line for the outgoing route
-  if (this.isInterchange(index) && index < this.result.path.length - 1) {
-    const nextStation = this.getStationByName(this.result.path[index + 1]);
-    // Find the common line between current and next station
-    const commonLine = station.lines.find(line => nextStation.lines.includes(line));
-    if (commonLine) {
-      return `bg-${commonLine}`;
-    }
-  }
-  // Default to first line if not an interchange or last station
-  return `bg-${station.lines[0] || 'primary'}`;
-},
-    getPlatform(stationName) {
       const station = this.getStationByName(stationName);
-      return station.platform || Math.floor(Math.random() * 4) + 1; // Random platform if not specified
+      // If we're at an interchange station, use the next station's line for the outgoing route
+      if (this.isInterchange(index) && index < this.result.path.length - 1) {
+        const nextStation = this.getStationByName(this.result.path[index + 1]);
+        // Find the common line between current and next station
+        const commonLine = station.lines.find(line => nextStation.lines.includes(line));
+        if (commonLine) {
+          return `bg-${commonLine}`;
+        }
+      }
+      // Default to first line if not an interchange or last station
+      return `bg-${station.lines[0] || 'primary'}`;
+    },
+    getLineData(lineId) {
+      // Assuming you have access to the lines data from your JSON
+      const line = metroData.lines ? metroData.lines.find(line => line.id === lineId) : { id: 'unknown', name: 'Unknown Line', color: 'grey' };
+      // return this.metroData?.lines?.find(line => line.id === lineId) || null;
+      return line;
+    },
+    getStationById(stationId) {
+      // Get station by ID instead of name
+      const station = metroData?.stations?.find(station => station.id === stationId);
+      // return this.metroData?.stations?.find(station => station.id === stationId) || null;
+      return station;
+    },
+    getPlatform(stationName) {
+      // console.log('Station Name:', stationName);
+      const station = this.getStationByName(stationName);
+      // console.log('Station Data:', station);
+
+      // If no station found, return default platform 1
+      if (!station || !station.platforms) {
+        return 1;
+      }
+
+      // Find the current station index in the path
+      const currentIndex = this.result.path.indexOf(stationName);
+      // console.log('currentIndex Data:', currentIndex);
+      // If station not found in path, return default
+      if (currentIndex === -1) {
+        return 1;
+      }
+
+      const isFirstStation = currentIndex === 0;
+      const isLastStation = currentIndex === this.result.path.length - 1;
+      // console.log('isFirstStation:', isFirstStation, 'isLastStation:', isLastStation);
+
+      let targetDirection = null;
+
+      // Determine the direction we're heading
+      if (!isLastStation) {
+        // We're going towards the next station - find which terminus that leads to
+        const nextStationName = this.result.path[currentIndex + 1];
+        const nextStation = this.getStationByName(nextStationName);
+        // console.log('nextStation Data:', nextStation);
+
+        if (nextStation) {
+          // Find the common line between current and next station
+          const commonLine = station.lines.find(line => nextStation.lines.includes(line));
+          // console.log('commonLineColor Data:', commonLine);
+
+          if (commonLine) {
+            // Get the line data to determine the terminus direction
+            const lineData = this.getLineData(commonLine); // You'll need this helper method
+            // console.log('lineData Data:', lineData);
+            if (lineData) {
+              // Find which terminus the next station is closer to
+              const currentStationIndexInLine = lineData.stations.indexOf(station.id);
+              const nextStationIndexInLine = lineData.stations.indexOf(nextStation.id);
+
+              // console.log('currentStation, nextStation Indexes:', currentStationIndexInLine, nextStationIndexInLine);
+
+              if (nextStationIndexInLine > currentStationIndexInLine) {
+                // Moving towards the end of the line
+                const lastStationInLine = lineData.stations[lineData.stations.length - 1];
+                const lastStationData = this.getStationById(lastStationInLine);
+                targetDirection = lastStationData ? lastStationData.name : null;
+              } else {
+                // Moving towards the beginning of the line
+                const firstStationInLine = lineData.stations[0];
+                const firstStationData = this.getStationById(firstStationInLine);
+                targetDirection = firstStationData ? firstStationData.name : null;
+              }
+              // console.log('targetDirection Data:', targetDirection);
+            }
+          }
+        }
+      } else if (!isFirstStation) {
+        // Last station - determine direction based on where we came from
+        const prevStationName = this.result.path[currentIndex - 1];
+        const prevStation = this.getStationByName(prevStationName);
+
+        if (prevStation) {
+          const commonLine = station.lines.find(line => prevStation.lines.includes(line));
+
+          if (commonLine) {
+            const lineData = this.getLineData(commonLine);
+
+            if (lineData) {
+              const currentStationIndexInLine = lineData.stations.indexOf(station.id);
+              const prevStationIndexInLine = lineData.stations.indexOf(prevStation.id);
+
+              if (prevStationIndexInLine < currentStationIndexInLine) {
+                // We came from earlier in the line, so we're heading towards the end
+                const lastStationInLine = lineData.stations[lineData.stations.length - 1];
+                const lastStationData = this.getStationById(lastStationInLine);
+                targetDirection = lastStationData ? lastStationData.name : null;
+              } else {
+                // We came from later in the line, so we're heading towards the beginning
+                const firstStationInLine = lineData.stations[0];
+                const firstStationData = this.getStationById(firstStationInLine);
+                targetDirection = firstStationData ? firstStationData.name : null;
+              }
+            }
+          }
+        }
+      }
+
+      // Find the platform that matches our target direction
+      if (targetDirection) {
+        const matchingPlatform = station.platforms.find(p =>
+          p.direction.toLowerCase().includes(targetDirection.toLowerCase())
+        );
+
+        if (matchingPlatform) {
+          return parseInt(matchingPlatform.platform_id.replace('p', '')) || 1;
+        }
+      }
+
+      // Fallback: return the first platform number
+      return parseInt(station.platforms[0].platform_id.replace('p', '')) || 1;
+    },
+    // add method to get the direction from platform use getPlatform method
+    getDirectionFromPlatform(stationName, platformNumber) {
+      const station = this.getStationByName(stationName);
+      if (!station || !station.platforms) return null;
+
+      const platform = station.platforms.find(p => parseInt(p.platform_id.replace('p', '')) === platformNumber);
+      return platform ? platform.direction : null;
     }
   }
 });
@@ -240,11 +364,31 @@ export default defineComponent({
 }
 
 /* Line color classes - adjust based on your metro system's colors */
-.bg-red { background-color: #E53935 !important; }
-.bg-blue { background-color: #1E88E5 !important; }
-.bg-green { background-color: #43A047 !important; }
-.bg-yellow { background-color: #FDD835 !important; }
-.bg-purple { background-color: #8E24AA !important; }
-.bg-orange { background-color: #FB8C00 !important; }
-.bg-pink { background-color: #EC407A !important; }
+.bg-red {
+  background-color: #E53935 !important;
+}
+
+.bg-blue {
+  background-color: #1E88E5 !important;
+}
+
+.bg-green {
+  background-color: #43A047 !important;
+}
+
+.bg-yellow {
+  background-color: #FDD835 !important;
+}
+
+.bg-purple {
+  background-color: #8E24AA !important;
+}
+
+.bg-orange {
+  background-color: #FB8C00 !important;
+}
+
+.bg-pink {
+  background-color: #EC407A !important;
+}
 </style>
