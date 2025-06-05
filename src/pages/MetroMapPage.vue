@@ -21,12 +21,7 @@
             @touchmove="onTouchMove"
             @touchend="onTouchEnd"
           >
-            <img
-              :src="imageSource"
-              @load="loading = false"
-              @error="onError"
-              class="map-image"
-            />
+            <img :src="imageSource" @load="loading = false" @error="onError" class="map-image" />
           </div>
         </q-card-section>
 
@@ -44,7 +39,7 @@ import { defineComponent, ref, reactive } from 'vue'
 export default defineComponent({
   name: 'MetroMapPage',
 
-  setup () {
+  setup() {
     const loading = ref(true)
     const imageSource = '/Metro_Map_2025_Namma_Metro.png'
     const scale = ref(1)
@@ -129,9 +124,9 @@ export default defineComponent({
       onTouchStart,
       onTouchMove,
       onTouchEnd,
-      onError
+      onError,
     }
-  }
+  },
 })
 </script>
 

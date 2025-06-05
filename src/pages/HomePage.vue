@@ -28,78 +28,82 @@ export default {
           title: 'Find Route',
           icon: 'directions',
           route: '/find-route',
-          color: 'bg-primary'
+          color: 'bg-primary',
         },
         {
           title: 'List Stations',
           icon: 'list',
           route: '/list-stations',
-          color: 'bg-secondary'
+          color: 'bg-secondary',
         },
         {
           title: 'View Metro Map',
           icon: 'map',
           route: '/metro-map',
-          color: 'bg-accent'
+          color: 'bg-accent',
         },
         {
           title: 'Get Tickets',
           icon: 'receipt',
           route: '/tickets',
-          color: 'bg-positive'
+          color: 'bg-positive',
         },
         {
           title: 'Nearest Stations',
           icon: 'my_location',
           route: '/nearest-stations',
-          color: 'bg-negative'
+          color: 'bg-negative',
         },
         {
           title: 'List Favorites',
           icon: 'star',
           route: '/favorites',
-          color: 'bg-warning'
+          color: 'bg-warning',
         },
         {
           title: 'About',
           icon: 'info',
           route: '/about',
-          color: 'bg-info'
-        }
+          color: 'bg-info',
+        },
       ],
       admobId: {
         banner: 'ca-app-pub-7089675560767740/4562700538',
-        app: 'ca-app-pub-7089675560767740~7633144050'
-      }
+        app: 'ca-app-pub-7089675560767740~7633144050',
+      },
     }
   },
   methods: {
     navigateTo(route) {
-      this.$router.push(route);
+      this.$router.push(route)
     },
     showBannerAd() {
       if (window.admob) {
         window.admob.banner.config({
           id: this.admobId.banner,
           isTesting: false,
-          autoShow: true
-        });
-        window.admob.banner.prepare();
+          autoShow: true,
+        })
+        window.admob.banner.prepare()
       }
-    }
+    },
   },
   mounted() {
     // Initialize AdMob when the component is mounted
-    document.addEventListener('deviceready', () => {
-      this.showBannerAd();
-    }, false);
+    document.addEventListener(
+      'deviceready',
+      () => {
+        this.showBannerAd()
+      },
+      false,
+    )
   },
   beforeUnmount() {
     // Remove the banner when component is destroyed
     if (window.admob) {
-      window.admob.banner.remove();
+      window.admob.banner.remove()
     }
-  }
+  },
 }
 </script>
 

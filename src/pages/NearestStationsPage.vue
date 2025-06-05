@@ -1,6 +1,5 @@
 <template>
   <div class="nearest-stations">
-
     <q-card-section>
       <div class="text-h6">Nearest Stations</div>
     </q-card-section>
@@ -20,8 +19,14 @@
             <q-item-label>{{ station.name }}</q-item-label>
             <q-item-label caption>
               {{ station.distance.toFixed(2) }} km away
-              <q-chip v-for="line in station.lines" :key="line" :color="getLineColor(line)" text-color="white" size="sm"
-                class="q-ml-sm">
+              <q-chip
+                v-for="line in station.lines"
+                :key="line"
+                :color="getLineColor(line)"
+                text-color="white"
+                size="sm"
+                class="q-ml-sm"
+              >
                 {{ line }}
               </q-chip>
             </q-item-label>
@@ -36,16 +41,16 @@
 </template>
 
 <script>
-import { ref, onMounted } from 'vue';
-import { findNearestStations } from '../components/StationService.vue';
+import { ref, onMounted } from 'vue'
+import { findNearestStations } from '../components/StationService.vue'
 
 export default {
   name: 'NearestStations',
 
   setup() {
-    const nearestStations = ref([]);
-    const loading = ref(false);
-    const error = ref(null);
+    const nearestStations = ref([])
+    const loading = ref(false)
+    const error = ref(null)
 
     const getLineColor = (line) => {
       const colors = {
@@ -53,59 +58,59 @@ export default {
         green: 'green',
         blue: 'blue',
         yellow: 'amber-8',
-        pink: 'pink'
-      };
-      return colors[line] || 'grey';
-    };
+        pink: 'pink',
+      }
+      return colors[line] || 'grey'
+    }
 
     const getCurrentLocation = () => {
       return new Promise((resolve, reject) => {
         if (!navigator.geolocation) {
-          reject(new Error('Geolocation is not supported by your browser'));
+          reject(new Error('Geolocation is not supported by your browser'))
         }
 
         navigator.geolocation.getCurrentPosition(
           (position) => resolve(position.coords),
-          (error) => reject(error)
-        );
-      });
-    };
+          (error) => reject(error),
+        )
+      })
+    }
 
     const loadNearestStations = async () => {
-      loading.value = true;
-      error.value = null;
+      loading.value = true
+      error.value = null
 
       try {
-        const coords = await getCurrentLocation();
-        nearestStations.value = findNearestStations(coords.latitude, coords.longitude);
+        const coords = await getCurrentLocation()
+        nearestStations.value = findNearestStations(coords.latitude, coords.longitude)
       } catch (err) {
-        error.value = 'Could not determine your location. Please enable location services.';
-        console.error(err);
+        error.value = 'Could not determine your location. Please enable location services.'
+        console.error(err)
       } finally {
-        loading.value = false;
+        loading.value = false
       }
-    };
+    }
 
     const navigate = (station) => {
       if (!station || !station.coordinates.lat || !station.coordinates.lng) {
-        console.error('Station coordinates not available');
-        return;
+        console.error('Station coordinates not available')
+        return
       }
-      const url = `https://www.google.com/maps/dir/?api=1&destination=${station.coordinates.lat},${station.coordinates.lng}`;
-      window.open(url, '_blank');
-    };
+      const url = `https://www.google.com/maps/dir/?api=1&destination=${station.coordinates.lat},${station.coordinates.lng}`
+      window.open(url, '_blank')
+    }
 
     onMounted(() => {
-      loadNearestStations();
-    });
+      loadNearestStations()
+    })
 
     return {
       nearestStations,
       loading,
       error,
       getLineColor,
-      navigate
-    };
-  }
-};
+      navigate,
+    }
+  },
+}
 </script>

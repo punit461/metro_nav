@@ -71,10 +71,11 @@
             <q-item>
               <q-item-section avatar>
                 <q-avatar>
-                  <div class="station-marker" 
-                       :class="{'interchange': station.isInterchange}">
-                    <div class="line-indicator"
-                         :style="{ backgroundColor: getLineColor(station, index) }"></div>
+                  <div class="station-marker" :class="{ interchange: station.isInterchange }">
+                    <div
+                      class="line-indicator"
+                      :style="{ backgroundColor: getLineColor(station, index) }"
+                    ></div>
                   </div>
                 </q-avatar>
               </q-item-section>
@@ -107,8 +108,7 @@
                   Change to {{ station.changeTo.name }} Line
                 </q-item-label>
                 <q-item-label caption>
-                  Platform {{ station.changeToPlatform }} → 
-                  Towards {{ station.changeTowards }}
+                  Platform {{ station.changeToPlatform }} → Towards {{ station.changeTowards }}
                 </q-item-label>
               </q-item-section>
               <q-item-section side>
@@ -123,9 +123,11 @@
             </q-item>
 
             <!-- Vertical line connector except for last item -->
-            <div v-if="index < route.stations.length - 1" 
-                 class="line-connector"
-                 :style="{ backgroundColor: getLineColor(station, index) }"></div>
+            <div
+              v-if="index < route.stations.length - 1"
+              class="line-connector"
+              :style="{ backgroundColor: getLineColor(station, index) }"
+            ></div>
           </div>
         </q-list>
       </q-card-section>
@@ -144,30 +146,30 @@ export default {
   props: {
     route: {
       type: Object,
-      default: null
-    }
+      default: null,
+    },
   },
   methods: {
     getLineColor(station, index) {
       // Return the color of the current line for this station
       if (station.currentLine) {
-        return station.currentLine.color;
+        return station.currentLine.color
       }
-      
+
       // If no current line is set, try to determine from the previous or next station
       if (index > 0 && this.route.stations[index - 1].currentLine) {
-        return this.route.stations[index - 1].currentLine.color;
+        return this.route.stations[index - 1].currentLine.color
       }
-      
+
       if (index < this.route.stations.length - 1 && this.route.stations[index + 1].currentLine) {
-        return this.route.stations[index + 1].currentLine.color;
+        return this.route.stations[index + 1].currentLine.color
       }
-      
+
       // Default color if no line information is available
-      return '#666666';
-    }
-  }
-};
+      return '#666666'
+    },
+  },
+}
 </script>
 
 <style scoped>

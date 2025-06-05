@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.16.4",
+    "@rollup/rollup-win32-x64-msvc": "^4.41.1",
     "@vueuse/gesture": "^2.0.0",
     "quasar": "^2.16.0",
     "vue": "^3.4.18",
@@ -34,6 +35,12 @@
     "postcss": "^8.4.14",
     "prettier": "^3.3.3",
     "vite-plugin-checker": "^0.9.0"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "^4.41.1" 
+  },
+  "overrides": {
+    "rollup": "npm:@rollup/wasm-node"
   },
   "engines": {
     "node": "^28 || ^26 || ^24 || ^22 || ^20 || ^18",
