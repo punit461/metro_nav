@@ -48,13 +48,6 @@ export default {
         id: station.id,
         name: station.name,
         lines: station.lines,
-        // Assuming station.lines is an array of line IDs. If not, adjust accordingly.
-        // The original code [cite: 36] used `line` directly as `backgroundColor` and `line.toUpperCase()`
-        // This implies line was a string like "red" or a hex color.
-        // We need to map line_ids to their visual properties.
-        // For this example, I'm assuming station.lines contains line_ids from metroData.lines
-        //lines: station.connections.map(conn => conn.line_id)
-        //         .filter((value, index, self) => self.indexOf(value) === index) // Unique line_ids
       }))
       .sort((a, b) => a.name.localeCompare(b.name));
 

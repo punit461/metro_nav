@@ -4,14 +4,7 @@ export const AppVue = `
     <q-layout view="lHh Lpr lFf">
       <q-header elevated class="bg-primary text-white">
         <q-toolbar>
-          <q-btn
-            flat
-            dense
-            round
-            @click="leftDrawerOpen = !leftDrawerOpen"
-            icon="menu"
-            aria-label="Menu"
-          />
+          <q-btn flat dense round @click="leftDrawerOpen = !leftDrawerOpen" icon="menu" aria-label="Menu" />
 
           <q-toolbar-title>
             Namma Metro Navigation
@@ -19,15 +12,10 @@ export const AppVue = `
         </q-toolbar>
       </q-header>
 
-      <q-drawer
-        v-model="leftDrawerOpen"
-        show-if-above
-        bordered
-        content-class="bg-grey-1"
-      >
+      <q-drawer v-model="leftDrawerOpen" show-if-above bordered content-class="bg-grey-1">
         <q-list>
           <q-item-label header class="text-grey-8">Namma Metro Navigation</q-item-label>
-          
+
           <q-item clickable to="/">
             <q-item-section avatar>
               <q-icon name="home" />
@@ -36,7 +24,7 @@ export const AppVue = `
               Home
             </q-item-section>
           </q-item>
-          
+
           <q-item clickable to="/find-route">
             <q-item-section avatar>
               <q-icon name="directions" />
@@ -48,7 +36,7 @@ export const AppVue = `
 
           <q-item clickable to="/metro-map">
             <q-item-section avatar>
-              <q-icon name="map"/>
+              <q-icon name="map" />
             </q-item-section>
             <q-item-section>
               Metro Map
@@ -57,7 +45,7 @@ export const AppVue = `
 
           <q-item clickable to="/list-stations">
             <q-item-section avatar>
-              <q-icon name="list"/>
+              <q-icon name="list" />
             </q-item-section>
             <q-item-section>
               List Stations
@@ -66,13 +54,22 @@ export const AppVue = `
 
           <q-item clickable to="/tickets">
             <q-item-section avatar>
-              <q-icon name="receipt"/>
+              <q-icon name="receipt" />
             </q-item-section>
             <q-item-section>
               Tickets
             </q-item-section>
           </q-item>
-          
+
+          <q-item clickable to="/nearest-stations">
+            <q-item-section avatar>
+              <q-icon name="my_location" />
+            </q-item-section>
+            <q-item-section>
+              Nearest Stations
+            </q-item-section>
+          </q-item>
+
           <q-item clickable to="/favorites">
             <q-item-section avatar>
               <q-icon name="star" />
@@ -81,7 +78,7 @@ export const AppVue = `
               Favorites
             </q-item-section>
           </q-item>
-          
+
           <q-item clickable to="/about">
             <q-item-section avatar>
               <q-icon name="info" />
@@ -103,7 +100,7 @@ export const AppVue = `
 <script>
 export default {
   name: 'App',
-  data () {
+  data() {
     return {
       leftDrawerOpen: false
     }

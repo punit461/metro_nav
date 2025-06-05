@@ -13,13 +13,15 @@ export const HomePageVue = `
         </q-card>
       </div>
     </div>
+    <!-- Add a container for the ad -->
+    <div class="ad-container"></div>
   </q-page>
 </template>
 
 <script>
 export default {
   name: 'HomePage',
-  data () {
+  data() {
     return {
       tiles: [
         {
@@ -64,12 +66,38 @@ export default {
           route: '/about',
           color: 'bg-info'
         }
-      ]
+      ],
+      admobId: {
+        banner: 'ca-app-pub-7089675560767740/4562700538',
+        app: 'ca-app-pub-7089675560767740~7633144050'
+      }
     }
   },
   methods: {
     navigateTo(route) {
       this.$router.push(route);
+    },
+    showBannerAd() {
+      if (window.admob) {
+        window.admob.banner.config({
+          id: this.admobId.banner,
+          isTesting: false,
+          autoShow: true
+        });
+        window.admob.banner.prepare();
+      }
+    }
+  },
+  mounted() {
+    // Initialize AdMob when the component is mounted
+    document.addEventListener('deviceready', () => {
+      this.showBannerAd();
+    }, false);
+  },
+  beforeUnmount() {
+    // Remove the banner when component is destroyed
+    if (window.admob) {
+      window.admob.banner.remove();
     }
   }
 }
@@ -84,6 +112,15 @@ export default {
   &:hover {
     transform: translateY(-5px);
   }
+}
+
+.ad-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px; // Standard banner height
+  z-index: 1000;
 }
 </style>
 `;

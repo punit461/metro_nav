@@ -44,14 +44,16 @@
             <div class="station-name">{{ station }}</div>
             <div class="station-info">
               <span v-if="index === 0" class="platform-info">
-                Platform {{ getPlatform(station) }} • {{ getLineInfo(station).name }}
+                OnBoard Platform {{ getPlatform(station) }} • {{ getDirectionFromPlatform(station, getPlatform(station)) }} • {{
+                  getLineInfo(station).name }}
               </span>
               <span v-else-if="isInterchange(index)" class="platform-info">
-                Change to Platform {{ getPlatform(result.path[index + 1]) }} • {{ getLineInfo(result.path[index +
+                Change to Platform {{ getPlatform(result.path[index + 1]) }} • {{ getDirectionFromPlatform(station,
+                  getPlatform(station)) }} • {{ getLineInfo(result.path[index +
                   1]).name }}
               </span>
               <span v-else class="platform-info">
-                Platform {{ getPlatform(station) }} • {{ getLineInfo(station).name }}
+                {{ getLineInfo(station).name }}
               </span>
             </div>
           </div>
